@@ -7,17 +7,28 @@
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Global description: **Information on a given Wall of Building　(Shape, thickness, wall type, etc.).**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-<!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `dateObjectCreated[date-time]`: The registration date and time of this item as an object.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: The update date and time of this item as an object.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: A description of this item  - `flagDeleted[string]`: Flag set when this item is deleted as an object.  - `id[*]`: Unique identifier of the entity  - `jointArea[number]`:  Joint Area of this item and Spatial Objects.  . Model: [https://schema.org/Number](https://schema.org/Number)- `jointDirection[*]`: Joint Direction of this item and Spatial Objects.  - `jointSurface[*]`: Joint Surface of this item and Spatial Objects.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `objectName[string]`: Name of this item as an object.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refArea[array]`:  Reference to the area containing this item.  - `refBuilding[array]`: Reference to the building containing this item.  - `refMaterialLayer[array]`: Reference to the materialLayer containing this item.  - `refOpening[array]`: Reference to the opening containing this item.  - `refRoom[array]`: Reference to the room containing this item.  - `refStair[array]`: Reference to the stair containing this item.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `shape[*]`: Shape of this item.  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `surfaceInner[*]`: Inner Shape of this item.  - `surfaceOuter[*]`: Outer Shape of this item.  - `thermalTransmission[number]`: Thermal transmission of this item.  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: Thickness of this item.  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: It must be equal to `Wall`.  - `volumetricSpecificHeat[number]`:  Volumetric specific heat of this item.  . Model: [https://schema.org/Number](https://schema.org/Number)- `wallType[string]`: Wall type. Enum:'outer, inner, basement.'  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
-- No required properties  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
+notes appearing at the beginning of the spec  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
@@ -1290,19 +1301,1876 @@ Wall:
 </details>    
 <!-- /60-ModelYaml -->  
 <!-- 70-MiddleNotes -->  
+notes appearing in the middle of the spec  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Example payloads    
 #### Wall NGSI-v2 key-values Example    
 Here is an example of a Wall in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:Wall:BOZ0000000001",  
+  "type": "Wall",  
+  "dateObjectCreated": "2020-07-20T17:17:00.621Z",  
+  "dateObjectUpdated": "2020-07-20T17:17:00.621Z",  
+  "flagDeleted": "false",  
+  "jointDirection": {  
+    "type": "Point",  
+    "coordinates": [  
+      0,  
+      0,  
+      90  
+    ]  
+  },  
+  "jointSurface": {  
+    "type": "MultiPoint",  
+    "coordinates": [  
+      [  
+        0,  
+        0,  
+        0  
+      ],  
+      [  
+        100,  
+        0,  
+        0  
+      ],  
+      [  
+        100,  
+        100,  
+        0  
+      ],  
+      [  
+        0,  
+        100,  
+        0  
+      ]  
+    ]  
+  },  
+  "jointArea": 0.368,  
+  "objectName": "wall_1",  
+  "refArea": [  
+    "urn:ngsi-ld:Area:SAZ0000000001"  
+  ],  
+  "refBuilding": [  
+    "urn:ngsi-ld:Building:ZZZ0000000001"   
+  ],  
+  "refRoom": [  
+    "urn:ngsi-ld:Room:SRZ0000000001"   
+  ],  
+  "refStair": [  
+    "urn:ngsi-ld:Stair:BTZ0000000001"   
+  ],  
+  "shape": {  
+    "type": "MultiPoint",  
+    "coordinates": [  
+      [  
+        0,  
+        0,  
+        0  
+      ],  
+      [  
+        100,  
+        0,  
+        0  
+      ],  
+      [  
+        0,  
+        100,  
+        0  
+      ],  
+      [  
+        100,  
+        100,  
+        0  
+      ],  
+      [  
+        0,  
+        0,  
+        100  
+      ],  
+      [  
+        100,  
+        0,  
+        100  
+      ],  
+      [  
+        0,  
+        100,  
+        100  
+      ],  
+      [  
+        100,  
+        100,  
+        100  
+      ]  
+    ]  
+  },  
+  "surfaceInner": {  
+    "type": "Polygon",  
+    "coordinates": [  
+      [  
+        [  
+          25,  
+          25,  
+          25  
+        ],  
+        [  
+          25,  
+          75,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          75,  
+          25,  
+          25  
+        ],  
+        [  
+          25,  
+          25,  
+          25  
+        ]  
+      ],  
+      [  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          75,  
+          75,  
+          75  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          75,  
+          25,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ]  
+      ],  
+      [  
+        [  
+          25,  
+          75,  
+          25  
+        ],  
+        [  
+          25,  
+          75,  
+          75  
+        ],  
+        [  
+          75,  
+          75,  
+          75  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          25,  
+          75,  
+          25  
+        ]  
+      ],  
+      [  
+        [  
+          25,  
+          25,  
+          25  
+        ],  
+        [  
+          25,  
+          75,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          75,  
+          25,  
+          25  
+        ],  
+        [  
+          25,  
+          25,  
+          25  
+        ]  
+      ],  
+      [  
+        [  
+          25,  
+          75,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          75,  
+          75,  
+          75  
+        ],  
+        [  
+          25,  
+          75,  
+          75  
+        ],  
+        [  
+          25,  
+          75,  
+          25  
+        ]  
+      ],  
+      [  
+        [  
+          25,  
+          25,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          25,  
+          25,  
+          75  
+        ],  
+        [  
+          25,  
+          25,  
+          25  
+        ]  
+      ]  
+    ]  
+  },  
+  "surfaceOuter": {  
+    "type": "Polygon",  
+    "coordinates": [  
+      [  
+        [  
+          0,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          0  
+        ],  
+        [  
+          0,  
+          100,  
+          0  
+        ],  
+        [  
+          0,  
+          0,  
+          0  
+        ]  
+      ],  
+      [  
+        [  
+          100,  
+          100,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          100  
+        ],  
+        [  
+          100,  
+          0,  
+          100  
+        ],  
+        [  
+          100,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          0  
+        ]  
+      ],  
+      [  
+        [  
+          0,  
+          0,  
+          100  
+        ],  
+        [  
+          100,  
+          0,  
+          100  
+        ],  
+        [  
+          100,  
+          100,  
+          100  
+        ],  
+        [  
+          0,  
+          100,  
+          100  
+        ],  
+        [  
+          0,  
+          0,  
+          100  
+        ]  
+      ],  
+      [  
+        [  
+          0,  
+          0,  
+          0  
+        ],  
+        [  
+          0,  
+          100,  
+          0  
+        ],  
+        [  
+          0,  
+          100,  
+          100  
+        ],  
+        [  
+          0,  
+          0,  
+          100  
+        ],  
+        [  
+          0,  
+          0,  
+          0  
+        ]  
+      ],  
+      [  
+        [  
+          0,  
+          100,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          100  
+        ],  
+        [  
+          0,  
+          100,  
+          100  
+        ],  
+        [  
+          0,  
+          100,  
+          0  
+        ]  
+      ],  
+      [  
+        [  
+          0,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          0,  
+          100  
+        ],  
+        [  
+          0,  
+          0,  
+          100  
+        ],  
+        [  
+          0,  
+          0,  
+          0  
+        ]  
+      ]  
+    ]  
+  },  
+  "thermalTransmission": 0.834,  
+  "thickness": 115  
+}  
+```  
+</details>  
 #### Wall NGSI-v2 normalized Example    
 Here is an example of a Wall in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:Wall:BOZ0000000001",  
+  "type": "Wall",  
+  "dateObjectCreated": {  
+    "type": "DateTime",  
+    "value": "2020-07-20T17:17:00.621Z"  
+  },  
+  "dateObjectUpdated": {  
+    "type": "DateTime",  
+    "value": "2020-07-20T17:17:00.621Z"  
+  },  
+  "flagDeleted": {  
+    "type": "Text",  
+    "value": "false"  
+  },  
+  "jointDirection": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        0,  
+        0,  
+        90  
+      ]  
+    }  
+  },  
+  "jointSurface": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "type": "MultiPoint",  
+      "coordinates": [  
+        [  
+          0,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          0  
+        ],  
+        [  
+          0,  
+          100,  
+          0  
+        ]  
+      ]  
+    }  
+  },  
+  "jointArea": {  
+    "type": "Number",  
+    "value": 0.368  
+  },  
+  "objectName": {  
+    "type": "Text",  
+    "value": "wall_1"  
+  },  
+  "refArea": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:Area:SAZ0000000001"  
+  },  
+  "refBuilding": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:Building:ZZZ0000000001"  
+  },  
+  "refRoom": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:Room:SRZ0000000001"  
+  },  
+  "refStair": {  
+    "type": "URI",  
+    "value": "urn:ngsi-ld:Stair:BTZ0000000001"  
+  },  
+  "shape": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "type": "MultiPoint",  
+      "coordinates": [  
+        [  
+          0,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          0,  
+          0  
+        ],  
+        [  
+          0,  
+          100,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          0  
+        ],  
+        [  
+          0,  
+          0,  
+          100  
+        ],  
+        [  
+          100,  
+          0,  
+          100  
+        ],  
+        [  
+          0,  
+          100,  
+          100  
+        ],  
+        [  
+          100,  
+          100,  
+          100  
+        ]  
+      ]  
+    }  
+  },  
+  "surfaceInner": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "type": "Polygon",  
+      "coordinates": [  
+        [  
+          [  
+            25,  
+            25,  
+            25  
+          ],  
+          [  
+            25,  
+            75,  
+            25  
+          ],  
+          [  
+            75,  
+            25,  
+            75  
+          ],  
+          [  
+            75,  
+            25,  
+            25  
+          ],  
+          [  
+            25,  
+            25,  
+            25  
+          ]  
+        ],  
+        [  
+          [  
+            75,  
+            25,  
+            75  
+          ],  
+          [  
+            75,  
+            75,  
+            75  
+          ],  
+          [  
+            75,  
+            25,  
+            75  
+          ],  
+          [  
+            75,  
+            25,  
+            25  
+          ],  
+          [  
+            75,  
+            25,  
+            75  
+          ]  
+        ],  
+        [  
+          [  
+            25,  
+            75,  
+            25  
+          ],  
+          [  
+            25,  
+            75,  
+            75  
+          ],  
+          [  
+            75,  
+            75,  
+            75  
+          ],  
+          [  
+            75,  
+            25,  
+            75  
+          ],  
+          [  
+            25,  
+            75,  
+            25  
+          ]  
+        ],  
+        [  
+          [  
+            25,  
+            25,  
+            25  
+          ],  
+          [  
+            25,  
+            75,  
+            25  
+          ],  
+          [  
+            75,  
+            25,  
+            75  
+          ],  
+          [  
+            75,  
+            25,  
+            25  
+          ],  
+          [  
+            25,  
+            25,  
+            25  
+          ]  
+        ],  
+        [  
+          [  
+            25,  
+            75,  
+            25  
+          ],  
+          [  
+            75,  
+            25,  
+            75  
+          ],  
+          [  
+            75,  
+            75,  
+            75  
+          ],  
+          [  
+            25,  
+            75,  
+            75  
+          ],  
+          [  
+            25,  
+            75,  
+            25  
+          ]  
+        ],  
+        [  
+          [  
+            25,  
+            25,  
+            25  
+          ],  
+          [  
+            75,  
+            25,  
+            25  
+          ],  
+          [  
+            75,  
+            25,  
+            75  
+          ],  
+          [  
+            25,  
+            25,  
+            75  
+          ],  
+          [  
+            25,  
+            25,  
+            25  
+          ]  
+        ]  
+      ]  
+    }  
+  },  
+  "surfaceOuter": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "type": "Polygon",  
+      "coordinates": [  
+        [  
+          [  
+            0,  
+            0,  
+            0  
+          ],  
+          [  
+            100,  
+            0,  
+            0  
+          ],  
+          [  
+            100,  
+            100,  
+            0  
+          ],  
+          [  
+            0,  
+            100,  
+            0  
+          ],  
+          [  
+            0,  
+            0,  
+            0  
+          ]  
+        ],  
+        [  
+          [  
+            100,  
+            100,  
+            0  
+          ],  
+          [  
+            100,  
+            100,  
+            100  
+          ],  
+          [  
+            100,  
+            0,  
+            100  
+          ],  
+          [  
+            100,  
+            0,  
+            0  
+          ],  
+          [  
+            100,  
+            100,  
+            0  
+          ]  
+        ],  
+        [  
+          [  
+            0,  
+            0,  
+            100  
+          ],  
+          [  
+            100,  
+            0,  
+            100  
+          ],  
+          [  
+            100,  
+            100,  
+            100  
+          ],  
+          [  
+            0,  
+            100,  
+            100  
+          ],  
+          [  
+            0,  
+            0,  
+            100  
+          ]  
+        ],  
+        [  
+          [  
+            0,  
+            0,  
+            0  
+          ],  
+          [  
+            0,  
+            100,  
+            0  
+          ],  
+          [  
+            0,  
+            100,  
+            100  
+          ],  
+          [  
+            0,  
+            0,  
+            100  
+          ],  
+          [  
+            0,  
+            0,  
+            0  
+          ]  
+        ],  
+        [  
+          [  
+            0,  
+            100,  
+            0  
+          ],  
+          [  
+            100,  
+            100,  
+            0  
+          ],  
+          [  
+            100,  
+            100,  
+            100  
+          ],  
+          [  
+            0,  
+            100,  
+            100  
+          ],  
+          [  
+            0,  
+            100,  
+            0  
+          ]  
+        ],  
+        [  
+          [  
+            0,  
+            0,  
+            0  
+          ],  
+          [  
+            100,  
+            0,  
+            0  
+          ],  
+          [  
+            100,  
+            0,  
+            100  
+          ],  
+          [  
+            0,  
+            0,  
+            100  
+          ],  
+          [  
+            0,  
+            0,  
+            0  
+          ]  
+        ]  
+      ]  
+    }  
+  },  
+  "thermalTransmission": {  
+    "type": "Number",  
+    "value": 0.834  
+  },  
+  "thickness": {  
+    "type": "Number",  
+    "value": 115  
+  }  
+}  
+```  
+</details>  
 #### Wall NGSI-LD key-values Example    
 Here is an example of a Wall in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ],  
+  "id": "urn:ngsi-ld:Wall:BOZ0000000001",  
+  "type": "Wall",  
+  "dateObjectCreated": "2020-07-20T17:17:00.621Z",  
+  "dateObjectUpdated": "2020-07-20T17:17:00.621Z",  
+  "flagDeleted": "false",  
+  "jointDirection": {  
+    "type": "Point",  
+    "coordinates": [  
+      0,  
+      0,  
+      90  
+    ]  
+  },  
+  "jointSurface": {  
+    "type": "MultiPoint",  
+    "coordinates": [  
+      [  
+        0,  
+        0,  
+        0  
+      ],  
+      [  
+        100,  
+        0,  
+        0  
+      ],  
+      [  
+        100,  
+        100,  
+        0  
+      ],  
+      [  
+        0,  
+        100,  
+        0  
+      ]  
+    ]  
+  },  
+  "jointArea": 0.368,  
+  "objectName": "wall_1",  
+  "refArea": [  
+    "urn:ngsi-ld:Area:SAZ0000000001"   
+  ],  
+  "refBuilding": [  
+    "urn:ngsi-ld:Building:ZZZ0000000001"   
+  ],  
+  "refRoom": [  
+    "urn:ngsi-ld:Room:SRZ0000000001"  
+  ],  
+  "refStair": [  
+    "urn:ngsi-ld:Stair:BTZ0000000001"  
+  ],  
+  "shape": {  
+    "type": "MultiPoint",  
+    "coordinates": [  
+      [  
+        0,  
+        0,  
+        0  
+      ],  
+      [  
+        100,  
+        0,  
+        0  
+      ],  
+      [  
+        0,  
+        100,  
+        0  
+      ],  
+      [  
+        100,  
+        100,  
+        0  
+      ],  
+      [  
+        0,  
+        0,  
+        100  
+      ],  
+      [  
+        100,  
+        0,  
+        100  
+      ],  
+      [  
+        0,  
+        100,  
+        100  
+      ],  
+      [  
+        100,  
+        100,  
+        100  
+      ]  
+    ]  
+  },  
+  "surfaceInner": {  
+    "type": "Polygon",  
+    "coordinates": [  
+      [  
+        [  
+          25,  
+          25,  
+          25  
+        ],  
+        [  
+          25,  
+          75,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          75,  
+          25,  
+          25  
+        ],  
+        [  
+          25,  
+          25,  
+          25  
+        ]  
+      ],  
+      [  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          75,  
+          75,  
+          75  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          75,  
+          25,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ]  
+      ],  
+      [  
+        [  
+          25,  
+          75,  
+          25  
+        ],  
+        [  
+          25,  
+          75,  
+          75  
+        ],  
+        [  
+          75,  
+          75,  
+          75  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          25,  
+          75,  
+          25  
+        ]  
+      ],  
+      [  
+        [  
+          25,  
+          25,  
+          25  
+        ],  
+        [  
+          25,  
+          75,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          75,  
+          25,  
+          25  
+        ],  
+        [  
+          25,  
+          25,  
+          25  
+        ]  
+      ],  
+      [  
+        [  
+          25,  
+          75,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          75,  
+          75,  
+          75  
+        ],  
+        [  
+          25,  
+          75,  
+          75  
+        ],  
+        [  
+          25,  
+          75,  
+          25  
+        ]  
+      ],  
+      [  
+        [  
+          25,  
+          25,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          25  
+        ],  
+        [  
+          75,  
+          25,  
+          75  
+        ],  
+        [  
+          25,  
+          25,  
+          75  
+        ],  
+        [  
+          25,  
+          25,  
+          25  
+        ]  
+      ]  
+    ]  
+  },  
+  "surfaceOuter": {  
+    "type": "Polygon",  
+    "coordinates": [  
+      [  
+        [  
+          0,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          0  
+        ],  
+        [  
+          0,  
+          100,  
+          0  
+        ],  
+        [  
+          0,  
+          0,  
+          0  
+        ]  
+      ],  
+      [  
+        [  
+          100,  
+          100,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          100  
+        ],  
+        [  
+          100,  
+          0,  
+          100  
+        ],  
+        [  
+          100,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          0  
+        ]  
+      ],  
+      [  
+        [  
+          0,  
+          0,  
+          100  
+        ],  
+        [  
+          100,  
+          0,  
+          100  
+        ],  
+        [  
+          100,  
+          100,  
+          100  
+        ],  
+        [  
+          0,  
+          100,  
+          100  
+        ],  
+        [  
+          0,  
+          0,  
+          100  
+        ]  
+      ],  
+      [  
+        [  
+          0,  
+          0,  
+          0  
+        ],  
+        [  
+          0,  
+          100,  
+          0  
+        ],  
+        [  
+          0,  
+          100,  
+          100  
+        ],  
+        [  
+          0,  
+          0,  
+          100  
+        ],  
+        [  
+          0,  
+          0,  
+          0  
+        ]  
+      ],  
+      [  
+        [  
+          0,  
+          100,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          100  
+        ],  
+        [  
+          0,  
+          100,  
+          100  
+        ],  
+        [  
+          0,  
+          100,  
+          0  
+        ]  
+      ],  
+      [  
+        [  
+          0,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          0,  
+          100  
+        ],  
+        [  
+          0,  
+          0,  
+          100  
+        ],  
+        [  
+          0,  
+          0,  
+          0  
+        ]  
+      ]  
+    ]  
+  },  
+  "thermalTransmission": 0.834,  
+  "thickness": 115  
+}  
+```  
+</details>  
 #### Wall NGSI-LD normalized Example    
 Here is an example of a Wall in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-<!-- /80-Examples -->  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:Wall:BOZ0000000001",  
+  "type": "Wall",  
+  "dateObjectCreated": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "string",  
+      "@value": "2020-07-20T17:17:00.621Z"  
+    }  
+  },  
+  "dateObjectUpdated": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "string",  
+      "@value": "2020-07-20T17:17:00.621Z"  
+    }  
+  },  
+  "flagDeleted": {  
+    "type": "Property",  
+    "value": "false"  
+  },  
+  "jointDirection": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        0,  
+        0,  
+        90  
+      ]  
+    }  
+  },  
+  "jointSurface": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "MultiPoint",  
+      "coordinates": [  
+        [  
+          0,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          0,  
+          0  
+        ],  
+        [  
+          100,  
+          100,  
+          0  
+        ],  
+        [  
+          0,  
+          100,  
+          0  
+        ]  
+      ]  
+    }  
+  },  
+  "jointArea": {  
+    "type": "Property",  
+    "value": 0.368  
+  },  
+  "objectName": {  
+    "type": "Property",  
+    "value": "wall_1"  
+  },  
+  "refArea": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Area:SAZ0000000001"  
+    ]  
+  },  
+  "refBuilding": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Building:ZZZ0000000001"  
+    ]  
+  },  
+  "refRoom": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Room:SRZ0000000001"  
+    ]  
+  },  
+  "refStair": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Stair:BTZ0000000001"  
+    ]  
+  },  
+    "shape": {  
+      "type": "GeoProperty",  
+      "value": {  
+        "type": "MultiPoint",  
+        "coordinates": [  
+          [  
+            0,  
+            0,  
+            0  
+          ],  
+          [  
+            100,  
+            0,  
+            0  
+          ],  
+          [  
+            0,  
+            100,  
+            0  
+          ],  
+          [  
+            100,  
+            100,  
+            0  
+          ],  
+          [  
+            0,  
+            0,  
+            100  
+          ],  
+          [  
+            100,  
+            0,  
+            100  
+          ],  
+          [  
+            0,  
+            100,  
+            100  
+          ],  
+          [  
+            100,  
+            100,  
+            100  
+          ]  
+        ]  
+      }  
+    },  
+    "surfaceInner": {  
+      "type": "GeoProperty",  
+      "value": {  
+        "type": "Polygon",  
+        "coordinates": [  
+          [  
+            [  
+              25,  
+              25,  
+              25  
+            ],  
+            [  
+              25,  
+              75,  
+              25  
+            ],  
+            [  
+              75,  
+              25,  
+              75  
+            ],  
+            [  
+              75,  
+              25,  
+              25  
+            ],  
+            [  
+              25,  
+              25,  
+              25  
+            ]  
+          ],  
+          [  
+            [  
+              75,  
+              25,  
+              75  
+            ],  
+            [  
+              75,  
+              75,  
+              75  
+            ],  
+            [  
+              75,  
+              25,  
+              75  
+            ],  
+            [  
+              75,  
+              25,  
+              25  
+            ],  
+            [  
+              75,  
+              25,  
+              75  
+            ]  
+          ],  
+          [  
+            [  
+              25,  
+              75,  
+              25  
+            ],  
+            [  
+              25,  
+              75,  
+              75  
+            ],  
+            [  
+              75,  
+              75,  
+              75  
+            ],  
+            [  
+              75,  
+              25,  
+              75  
+            ],  
+            [  
+              25,  
+              75,  
+              25  
+            ]  
+          ],  
+          [  
+            [  
+              25,  
+              25,  
+              25  
+            ],  
+            [  
+              25,  
+              75,  
+              25  
+            ],  
+            [  
+              75,  
+              25,  
+              75  
+            ],  
+            [  
+              75,  
+              25,  
+              25  
+            ],  
+            [  
+              25,  
+              25,  
+              25  
+            ]  
+          ],  
+          [  
+            [  
+              25,  
+              75,  
+              25  
+            ],  
+            [  
+              75,  
+              25,  
+              75  
+            ],  
+            [  
+              75,  
+              75,  
+              75  
+            ],  
+            [  
+              25,  
+              75,  
+              75  
+            ],  
+            [  
+              25,  
+              75,  
+              25  
+            ]  
+          ],  
+          [  
+            [  
+              25,  
+              25,  
+              25  
+            ],  
+            [  
+              75,  
+              25,  
+              25  
+            ],  
+            [  
+              75,  
+              25,  
+              75  
+            ],  
+            [  
+              25,  
+              25,  
+              75  
+            ],  
+            [  
+              25,  
+              25,  
+              25  
+            ]  
+          ]  
+        ]  
+      }  
+    },  
+    "surfaceOuter": {  
+      "type": "GeoProperty",  
+      "value": {  
+        "type": "Polygon",  
+        "coordinates": [  
+          [  
+            [  
+              0,  
+              0,  
+              0  
+            ],  
+            [  
+              100,  
+              0,  
+              0  
+            ],  
+            [  
+              100,  
+              100,  
+              0  
+            ],  
+            [  
+              0,  
+              100,  
+              0  
+            ],  
+            [  
+              0,  
+              0,  
+              0  
+            ]  
+          ],  
+          [  
+            [  
+              100,  
+              100,  
+              0  
+            ],  
+            [  
+              100,  
+              100,  
+              100  
+            ],  
+            [  
+              100,  
+              0,  
+              100  
+            ],  
+            [  
+              100,  
+              0,  
+              0  
+            ],  
+            [  
+              100,  
+              100,  
+              0  
+            ]  
+          ],  
+          [  
+            [  
+              0,  
+              0,  
+              100  
+            ],  
+            [  
+              100,  
+              0,  
+              100  
+            ],  
+            [  
+              100,  
+              100,  
+              100  
+            ],  
+            [  
+              0,  
+              100,  
+              100  
+            ],  
+            [  
+              0,  
+              0,  
+              100  
+            ]  
+          ],  
+          [  
+            [  
+              0,  
+              0,  
+              0  
+            ],  
+            [  
+              0,  
+              100,  
+              0  
+            ],  
+            [  
+              0,  
+              100,  
+              100  
+            ],  
+            [  
+              0,  
+              0,  
+              100  
+            ],  
+            [  
+              0,  
+              0,  
+              0  
+            ]  
+          ],  
+          [  
+            [  
+              0,  
+              100,  
+              0  
+            ],  
+            [  
+              100,  
+              100,  
+              0  
+            ],  
+            [  
+              100,  
+              100,  
+              100  
+            ],  
+            [  
+              0,  
+              100,  
+              100  
+            ],  
+            [  
+              0,  
+              100,  
+              0  
+            ]  
+          ],  
+          [  
+            [  
+              0,  
+              0,  
+              0  
+            ],  
+            [  
+              100,  
+              0,  
+              0  
+            ],  
+            [  
+              100,  
+              0,  
+              100  
+            ],  
+            [  
+              0,  
+              0,  
+              100  
+            ],  
+            [  
+              0,  
+              0,  
+              0  
+            ]  
+          ]  
+        ]  
+      }  
+    },  
+  "thermalTransmission": {  
+    "type": "Property",  
+    "value": 0.834  
+  },  
+  "thickness": {  
+    "type": "Property",  
+    "value": 115  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
+notes appearing in the footer of the spec  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
