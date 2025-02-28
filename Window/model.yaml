@@ -757,50 +757,65 @@ Window:
       x-ngsi:
         type: Property
     refArea:
+      description: Reference to the area containing this item
       items:
-        description: Reference to the area containing this item
+        description: every item Contained in the reference Area
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     refBuilding:
+      description: Reference to the building containing this item
       items:
-        description: Reference to the building containing this item
+        description: Reference to every element containing this building
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     refGlass:
+      description: Reference to the glass containing this item
       items:
-        description: Reference to the glass containing this item
+        description: Reference to every glass containing this item
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     refRoom:
+      description: Reference to the room containing this item
       items:
-        description: Reference to the room containing this item
+        description: Reference to every room containing this item
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     refStair:
+      description: Reference to the stair containing this item
       items:
-        description: Reference to the stair containing this item
+        description: Reference to every stair containing this item
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -1024,7 +1039,7 @@ Window:
       x-ngsi:
         type: Property
     surfaceGlass:
-      description: shape of the glass
+      description: Shape of the glass
       oneOf:
         - description: Geojson reference to the item. Point
           properties:
