@@ -10,6 +10,22 @@ notes appearing in the beginning of the README.md at the root of the data model 
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.ZEB/Window/swagger.yaml)
+
+Link to the [specification](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/doc/spec.md)
+
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/doc/spec_ES.md)
+
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/doc/spec_FR.md)
+
+Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/doc/spec_JA.md)
+
+[链接到规范](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/doc/spec_ZH.md)
+
+[사양 링크](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/doc/spec_KO.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.ZEB/Window/examples/example.json) (keyvalues) for NGSI v2
@@ -19,6 +35,14 @@ Link to the [example](https://smart-data-models.github.io/dataModel.ZEB/Window/e
 Link to the [example](https://smart-data-models.github.io/dataModel.ZEB/Window/examples/example-normalized.json) (normalized) for NGSI-V2
 
 Link to the [example](https://smart-data-models.github.io/dataModel.ZEB/Window/examples/example-normalized.jsonld) (normalized) for NGSI-LD
+
+Link to the [example](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/examples/example.json.csv) (keyvalues) for NGSI v2 in CSV format
+
+Link to the [example](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/examples/example.jsonld.csv) (keyvalues) for NGSI-LD in CSV format
+
+Link to the [example](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/examples/example-normalized.json.csv) (normalized) for NGSI-V2 in CSV format
+
+Link to the [example](https://github.com/smart-data-models/dataModel.ZEB/blob/master/Window/examples/example-normalized.jsonld.csv) (normalized) for NGSI-LD in CSV format
 ### Dynamic Examples generation
 
 Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.ZEB/master/Window/schema.json&email=info@smartdatamodels.org) of NGSI-LD normalized payloads compliant with this data model. Refresh for new values
