@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Glass of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Glass_type AS ENUM ('Glass');
+CREATE TABLE Glass (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, glassColor TEXT, glassName TEXT, glassSolarRadiationHeatAcquisitionRate NUMERIC, glassThermalTransmission NUMERIC, glassVisibleLightTransmittance NUMERIC, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, refWindow JSON, seeAlso JSON, source TEXT, type Glass_type);
