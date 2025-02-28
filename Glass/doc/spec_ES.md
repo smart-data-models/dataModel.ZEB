@@ -23,7 +23,7 @@
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
-- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `glassColor[string]`: Color(código de color) del vidrio  - `glassName[string]`: Nombre del material de vidrio, como vidrio templado  - `glassSolarRadiationHeatAcquisitionRate[number]`: Tasa de adquisición de calor solar del material de vidrio  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `glassThermalTransmission[number]`: Transmisión térmica del material de vidrio  . Model: [https://schema.org/Number](https://schema.org/Number)- `glassVisibleLightTransmittance[number]`: Transmitancia de la luz visible del material de vidrio  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `refWindow`:   - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Debe ser igual a Vidrio  <!-- /30-PropertiesList -->  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `glassColor[string]`: Color(código de color) del vidrio  - `glassName[string]`: Nombre del material de vidrio, como vidrio templado  - `glassSolarRadiationHeatAcquisitionRate[number]`: Tasa de adquisición de calor solar del material de vidrio  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `glassThermalTransmission[number]`: Transmisión térmica del material de vidrio  . Model: [https://schema.org/Number](https://schema.org/Number)- `glassVisibleLightTransmittance[number]`: Transmitancia de la luz visible del material de vidrio  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `refWindow[array]`: Referencia a la ventana que contiene este elemento  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Debe ser igual a Vidrio  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -397,14 +397,17 @@ Glass:
       x-ngsi:    
         type: Property    
     refWindow:    
+      description: Reference to the window containing this item    
       items:    
-        description: Reference to the window containing this item    
+        description: Every reference to the windows containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
