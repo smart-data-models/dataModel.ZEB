@@ -4,7 +4,7 @@
 ============<!-- /10-Header -->  
 <!-- 15-License -->  
 [オープン・ライセンス](https://github.com/smart-data-models//dataModel.ZEB/blob/master/Opening/LICENSE.md)  
-[文書が自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
 グローバルな記述：**建物の開口部に関する情報（形状、表面、厚さなど）***。  
@@ -23,7 +23,7 @@
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
-- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObjectCreated[date-time]`: このアイテムのオブジェクトとしての登録日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: オブジェクトとしてのこのアイテムの更新日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: この商品の説明  - `flagDeleted[string]`: このアイテムがオブジェクトとして削除されたときに設定されるフラグ  - `id[*]`: エンティティの一意識別子  - `jointArea[number]`: このアイテムと空間オブジェクトの共同エリア  . Model: [https://schema.org/Number](https://schema.org/Number)- `jointDirection[*]`: 本項目と空間オブジェクトの共同ディレクション  - `jointSurface[*]`: このアイテムと空間オブジェクトの接合面  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `objectName[string]`: オブジェクトとしてのこのアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `refArea`:   - `refBuilding`:   - `refRoom`:   - `refStair`:   - `refWall`:   - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `shape[*]`: この商品の形状  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `surfaceInner[*]`: この商品の内側形状  - `surfaceOuter[*]`: この商品の外形  - `thermalTransmission[number]`: この商品の熱伝導率  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: この商品の厚さ  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: と等しくなければならない。  - `volumetricSpecificHeat[number]`: この項目の体積比熱  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObjectCreated[date-time]`: このアイテムのオブジェクトとしての登録日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: オブジェクトとしてのこのアイテムの更新日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: この商品の説明  - `flagDeleted[string]`: このアイテムがオブジェクトとして削除されたときに設定されるフラグ  - `id[*]`: エンティティの一意識別子  - `jointArea[number]`: このアイテムと空間オブジェクトの共同エリア  . Model: [https://schema.org/Number](https://schema.org/Number)- `jointDirection[*]`: 本項目と空間オブジェクトの共同ディレクション  - `jointSurface[*]`: このアイテムと空間オブジェクトの接合面  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `objectName[string]`: オブジェクトとしてのこのアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `refArea[array]`: このアイテムを含むエリアに関する言及  - `refBuilding[array]`: このアイテムを含む建物に関する言及  - `refRoom[array]`: この項目が含まれている部屋に関する言及  - `refStair[array]`: この項目が含まれる階段への言及  - `refWall[array]`: このアイテムを含む壁に関する言及  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `shape[*]`: この商品の形状  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `surfaceInner[*]`: この商品の内側形状  - `surfaceOuter[*]`: この商品の外形  - `thermalTransmission[number]`: この商品の熱伝導率  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: この商品の厚さ  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: と等しくなければならない。  - `volumetricSpecificHeat[number]`: この項目の体積比熱  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -796,50 +796,65 @@ Opening:
       x-ngsi:    
         type: Property    
     refArea:    
+      description: Reference to the area containing this item    
       items:    
-        description: Reference to the area containing this item    
+        description: every item Contained in the reference Area    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refBuilding:    
+      description: Reference to the building containing this item    
       items:    
-        description: Reference to the building containing this item    
+        description: Reference to every element containing this building    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refRoom:    
+      description: Reference to the room containing this item    
       items:    
-        description: Reference to the room containing this item    
+        description: Reference to every room containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refStair:    
+      description: Reference to the stair containing this item    
       items:    
-        description: Reference to the stair containing this item    
+        description: Reference to every stair containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refWall:    
+      description: Reference to the wall containing this item    
       items:    
-        description: Reference to the wall containing this item    
+        description: Every reference to the walls containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
