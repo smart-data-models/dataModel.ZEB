@@ -23,7 +23,7 @@
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 标识公共街道上特定房产的编号    
-- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `dateObjectCreated[date-time]`: 此项目作为对象的注册日期和时间  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: 该项目作为对象的更新日期和时间  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: 项目描述  - `flagDeleted[string]`: 删除此项目作为对象时设置的标志  - `id[*]`: 实体的唯一标识符  - `jointArea[number]`: 本项目与空间物体的联合区域  . Model: [https://schema.org/Number](https://schema.org/Number)- `jointDirection[*]`: 本项目与空间物体的共同方向  - `jointSurface[*]`: 本项目与空间物体的联合表面  - `location[*]`: 项目的 Geojson 引用。可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `objectName[string]`: 该项目作为对象的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一标识  - `refArea`:   - `refBuilding`:   - `refGlass`:   - `refRoom`:   - `refStair`:   - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `shape[*]`: 该物品的形状  - `solarRadiationHeatAcquisitionRate[number]`: 太阳热获取率  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `surfaceGlass[*]`: 玻璃形状  - `thermalTransmission[number]`: 本物品的热传导性  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: 它必须等于窗口  - `volumetricSpecificHeat[number]`: 该物品的体积比热  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `dateObjectCreated[date-time]`: 此项目作为对象的注册日期和时间  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: 该项目作为对象的更新日期和时间  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: 项目描述  - `flagDeleted[string]`: 删除此项目作为对象时设置的标志  - `id[*]`: 实体的唯一标识符  - `jointArea[number]`: 本项目与空间物体的联合区域  . Model: [https://schema.org/Number](https://schema.org/Number)- `jointDirection[*]`: 本项目与空间物体的共同方向  - `jointSurface[*]`: 本项目与空间物体的联合表面  - `location[*]`: 项目的 Geojson 引用。可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `objectName[string]`: 该项目作为对象的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一标识  - `refArea[array]`: 包含此项目的区域参考  - `refBuilding[array]`: 包含该物品的建筑物的参考信息  - `refGlass[array]`: 包含此物品的玻璃杯参考  - `refRoom[array]`: 包含该项目房间的参考  - `refStair[array]`: 包含此项目的楼梯参考  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `shape[*]`: 该物品的形状  - `solarRadiationHeatAcquisitionRate[number]`: 太阳热获取率  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `surfaceGlass[*]`: 玻璃杯的形状  - `thermalTransmission[number]`: 本物品的热传导性  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: 它必须等于窗口  - `volumetricSpecificHeat[number]`: 该物品的体积比热  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -796,50 +796,65 @@ Window:
       x-ngsi:    
         type: Property    
     refArea:    
+      description: Reference to the area containing this item    
       items:    
-        description: Reference to the area containing this item    
+        description: every item Contained in the reference Area    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refBuilding:    
+      description: Reference to the building containing this item    
       items:    
-        description: Reference to the building containing this item    
+        description: Reference to every element containing this building    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refGlass:    
+      description: Reference to the glass containing this item    
       items:    
-        description: Reference to the glass containing this item    
+        description: Reference to every glass containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refRoom:    
+      description: Reference to the room containing this item    
       items:    
-        description: Reference to the room containing this item    
+        description: Reference to every room containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refStair:    
+      description: Reference to the stair containing this item    
       items:    
-        description: Reference to the stair containing this item    
+        description: Reference to every stair containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
@@ -1063,7 +1078,7 @@ Window:
       x-ngsi:    
         type: Property    
     surfaceGlass:    
-      description: shape of the glass    
+      description: Shape of the glass    
       oneOf:    
         - description: Geojson reference to the item. Point    
           properties:    
