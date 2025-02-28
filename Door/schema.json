@@ -68,45 +68,50 @@
         },
         "refArea": {
           "type": "array",
+          "description": "Relationship. Reference to the area containing this item",
           "items": {
             "type": "string",
-            "description": "Relationship. Reference to the area containing this item",
+            "description": "Relationship. every item Contained in the reference Area",
             "minItems": 1,
             "uniqueItems": true
           }
         },
         "refBuilding": {
           "type": "array",
+           "description": "Relationship. Reference to the building containing this item",
           "items": {
             "type": "string",
-            "description": "Relationship. Reference to the building containing this item",
+            "description": "Relationship. Reference to every element containing this building",
             "minItems": 1,
             "uniqueItems": true
           }
         },
         "refMaterial": {
           "type": "array",
+          "description": "Relationship. Reference to the material containing this item",
           "items": {
             "type": "string",
-            "description": "Relationship. Reference to the material containing this item",
+            "description": "Relationship. Every reference to the materials containing this item",
             "minItems": 1,
             "uniqueItems": true
           }
         },
-        "refRoom": {
+         "refRoom": {
           "type": "array",
+          "description": "Relationship. Reference to the room containing this item",
           "items": {
             "type": "string",
-            "description": "Relationship. Reference to the room containing this item",
+            "description": "Relationship. Reference to every room containing this item",
             "minItems": 1,
             "uniqueItems": true
           }
         },
         "refStair": {
           "type": "array",
+          "description": "Relationship. Reference to the stair containing this item",
           "items": {
             "type": "string",
-            "description": "Relationship. Reference to the stair containing this item",
+            "description": "Relationship. Reference to every stair containing this item",
             "minItems": 1,
             "uniqueItems": true
           }

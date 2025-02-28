@@ -59,37 +59,73 @@
           "type": "array",
           "description": "Relationship.  Reference to the area containing this item.",
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "description": "Relationship. Every item Contained in the reference Area",
+            "minItems": 1,
+            "uniqueItems": true
+          }
         },
         "refBuilding": {
           "type": "array",
           "description": "Relationship. Reference to the building containing this item.",
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "description": "Relationship. Reference to every element containing this building",
+            "minItems": 1,
+            "uniqueItems": true
+          }
         },
         "refMaterialLayer": {
           "type": "array",
           "description": "Relationship. Reference to the materialLayer containing this item.",
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "description": "Relationship. Reference to every element containing this Material layer",
+            "minItems": 1,
+            "uniqueItems": true
+          }
         },
         "refOpening": {
           "type": "array",
           "description": "Relationship. Reference to the opening containing this item.",
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "description": "Relationship. Reference to every element containing this Opening",
+            "minItems": 1,
+            "uniqueItems": true
+          }
         },
         "refRoom": {
           "type": "array",
           "description": "Relationship. Reference to the room containing this item.",
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "description": "Relationship. Reference to every room containing this item",
+            "minItems": 1,
+            "uniqueItems": true
+          }
         },
         "refStair": {
           "type": "array",
           "description": "Relationship. Reference to the stair containing this item.",
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "description": "Relationship. Reference to every stair containing this item",
+            "minItems": 1,
+            "uniqueItems": true
+          }
         },
         "shape": {
           "description": "GeoProperty. Shape of this item.",

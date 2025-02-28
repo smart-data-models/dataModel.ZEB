@@ -46,9 +46,10 @@
         },
         "refWindow": {
           "type": "array",
+          "description": "Relationship. Reference to the window containing this item",
           "items": {
             "type": "string",
-            "description": "Relationship. Reference to the window containing this item",
+            "description": "Relationship. Every reference to the windows containing this item",
             "minItems": 1,
             "uniqueItems": true
           }
