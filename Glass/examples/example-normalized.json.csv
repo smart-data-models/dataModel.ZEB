@@ -1,0 +1,2 @@
+"id_", "type_", "glassColor__type_", "glassColor__value_", "glassName__type_", "glassName__value_", "glassSolarRadiationHeatAcquisitionRate__type_", "glassSolarRadiationHeatAcquisitionRate__value_", "glassThermalTransmission__type_", "glassThermalTransmission__value_", "glassVisibleLightTransmittance__type_", "glassVisibleLightTransmittance__value_", "refWindow__type_", "refWindow__value_"
+"urn:ngsi-ld:Glass:BOW0000000001", "Glass", "Text", "#5f5fe6", "Text", "MJS_glass", "Number", "0.54", "Number", "1.6", "Number", "0.9", "URI", "urn:ngsi-ld:Window:BOW0000000001"
