@@ -23,7 +23,7 @@
 	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: Number identifying a specific property on a public street    
-- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `dateObjectCreated[date-time]`: The registration date and time of this item as an object  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: The update date and time of this item as an object  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: A description of this item  - `flagDeleted[string]`: Flag set when this item is deleted as an object  - `id[*]`: Unique identifier of the entity  - `layerNumber[number]`: Number of layer. For walls, numbering is from inside to outside. For slabs, numbering is from bottom to top  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `materialColor[string]`: Color(color code) of material  - `materialName[string]`: Name of material.   - `materialThermalConductivity[number]`: Thermal conductivity of material  . Model: [https://schema.org/Number](https://schema.org/Number)- `materialVolumetricSpecificHeat[number]`: Volumetric specific heat of material  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item  - `objectName[string]`: Name of this item as an object  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refMaterial`:   - `refSlab`:   - `refWall`:   - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `shape[*]`: Shape of this item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `thermalTransmission[number]`: Thermal transmission of this item  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: Thickness of this item  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: It must be equal to MaterialLayer  - `volumetricSpecificHeat[number]`: Volumetric specific heat of this item  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `dateObjectCreated[date-time]`: The registration date and time of this item as an object  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: The update date and time of this item as an object  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: A description of this item  - `flagDeleted[string]`: Flag set when this item is deleted as an object  - `id[*]`: Unique identifier of the entity  - `layerNumber[number]`: Number of layer. For walls, numbering is from inside to outside. For slabs, numbering is from bottom to top  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `materialColor[string]`: Color(color code) of material  - `materialName[string]`: Name of material.   - `materialThermalConductivity[number]`: Thermal conductivity of material  . Model: [https://schema.org/Number](https://schema.org/Number)- `materialVolumetricSpecificHeat[number]`: Volumetric specific heat of material  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item  - `objectName[string]`: Name of this item as an object  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refMaterial[array]`: Reference to the material containing this item  - `refSlab[array]`: Reference to the slab containing this item  - `refWall[array]`: Reference to the wall containing this item  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `shape[*]`: Shape of this item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `thermalTransmission[number]`: Thermal transmission of this item  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: Thickness of this item  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: It must be equal to MaterialLayer  - `volumetricSpecificHeat[number]`: Volumetric specific heat of this item  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -422,32 +422,41 @@ MaterialLayer:
       x-ngsi:    
         type: Property    
     refMaterial:    
+      description: Reference to the material containing this item    
       items:    
-        description: Reference to the material containing this item    
+        description: Every reference to the material containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refSlab:    
+      description: Reference to the slab containing this item    
       items:    
-        description: Reference to the slab containing this item    
+        description: Every reference to the slabs containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refWall:    
+      description: Reference to the wall containing this item    
       items:    
-        description: Reference to the wall containing this item    
+        description: Every reference to the walls containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
