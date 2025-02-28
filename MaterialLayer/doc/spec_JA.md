@@ -23,7 +23,7 @@
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
-- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObjectCreated[date-time]`: このアイテムのオブジェクトとしての登録日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: オブジェクトとしてのこのアイテムの更新日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: この商品の説明  - `flagDeleted[string]`: このアイテムがオブジェクトとして削除されたときに設定されるフラグ  - `id[*]`: エンティティの一意識別子  - `layerNumber[number]`: 層の数。壁の場合、番号は内側から外側へ。スラブの場合は下から上へ。  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `materialColor[string]`: 素材の色（カラーコード  - `materialName[string]`: 素材名。  - `materialThermalConductivity[number]`: 材料の熱伝導率  . Model: [https://schema.org/Number](https://schema.org/Number)- `materialVolumetricSpecificHeat[number]`: 材料の体積比熱  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名前  - `objectName[string]`: オブジェクトとしてのこのアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `refMaterial`:   - `refSlab`:   - `refWall`:   - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `shape[*]`: この商品の形状  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `thermalTransmission[number]`: この商品の熱伝導率  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: この商品の厚さ  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: MaterialLayer と等しくなければならない。  - `volumetricSpecificHeat[number]`: この項目の体積比熱  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObjectCreated[date-time]`: このアイテムのオブジェクトとしての登録日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: オブジェクトとしてのこのアイテムの更新日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: この商品の説明  - `flagDeleted[string]`: このアイテムがオブジェクトとして削除されたときに設定されるフラグ  - `id[*]`: エンティティの一意識別子  - `layerNumber[number]`: 層の数。壁の場合、番号は内側から外側へ。スラブの場合は下から上へ。  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `materialColor[string]`: 素材の色（カラーコード  - `materialName[string]`: 素材名。  - `materialThermalConductivity[number]`: 材料の熱伝導率  . Model: [https://schema.org/Number](https://schema.org/Number)- `materialVolumetricSpecificHeat[number]`: 材料の体積比熱  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名前  - `objectName[string]`: オブジェクトとしてのこのアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `refMaterial[array]`: この項目を含む資料への言及  - `refSlab[array]`: この項目を含むスラブへの言及  - `refWall[array]`: このアイテムを含む壁に関する言及  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `shape[*]`: この商品の形状  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `thermalTransmission[number]`: この商品の熱伝導率  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: この商品の厚さ  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: MaterialLayer と等しくなければならない。  - `volumetricSpecificHeat[number]`: この項目の体積比熱  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -422,32 +422,41 @@ MaterialLayer:
       x-ngsi:    
         type: Property    
     refMaterial:    
+      description: Reference to the material containing this item    
       items:    
-        description: Reference to the material containing this item    
+        description: Every reference to the material containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refSlab:    
+      description: Reference to the slab containing this item    
       items:    
-        description: Reference to the slab containing this item    
+        description: Every reference to the slabs containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refWall:    
+      description: Reference to the wall containing this item    
       items:    
-        description: Reference to the wall containing this item    
+        description: Every reference to the walls containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
