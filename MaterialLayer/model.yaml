@@ -383,32 +383,41 @@ MaterialLayer:
       x-ngsi:
         type: Property
     refMaterial:
+      description: Reference to the material containing this item
       items:
-        description: Reference to the material containing this item
+        description: Every reference to the material containing this item
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     refSlab:
+      description: Reference to the slab containing this item
       items:
-        description: Reference to the slab containing this item
+        description: Every reference to the slabs containing this item
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     refWall:
+      description: Reference to the wall containing this item
       items:
-        description: Reference to the wall containing this item
+        description: Every reference to the walls containing this item
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
