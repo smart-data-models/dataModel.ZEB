@@ -14,7 +14,7 @@
 
 ## Liste der Eigenschaften  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
 - `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
@@ -23,7 +23,7 @@
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
-- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `dateObjectCreated[date-time]`: Datum und Uhrzeit der Registrierung dieses Artikels als Objekt  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: Das Aktualisierungsdatum und die Uhrzeit dieses Artikels als Objekt  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: Eine Beschreibung dieses Artikels  - `flagDeleted[string]`: Flagge, die gesetzt wird, wenn dieses Element als Objekt gelöscht wird  - `height[number]`: Höhe dieses Artikels  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `jointArea[number]`: Gemeinsamer Bereich dieser Position und räumliche Objekte  . Model: [https://schema.org/Number](https://schema.org/Number)- `jointDirection[*]`: Gemeinsame Leitung dieser Position und der räumlichen Objekte  - `jointSurface[*]`: Gemeinsame Oberfläche dieses Artikels und räumliche Objekte  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `objectName[string]`: Name dieser Position als Objekt  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `refArea`:   - `refBuilding`:   - `refMaterial`:   - `refRoom`:   - `refStair`:   - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `shape[*]`: Form dieses Artikels  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `surfaceBase[*]`: Grundform dieses Artikels  - `thermalTransmission[number]`: Wärmeübertragung dieses Artikels  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Sie muss gleich der Spalte  - `volumetricSpecificHeat[number]`: Volumetrische spezifische Wärme dieses Artikels  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `dateObjectCreated[date-time]`: Datum und Uhrzeit der Registrierung dieses Artikels als Objekt  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: Das Aktualisierungsdatum und die Uhrzeit dieses Artikels als Objekt  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: Eine Beschreibung dieses Artikels  - `flagDeleted[string]`: Flagge, die gesetzt wird, wenn dieses Element als Objekt gelöscht wird  - `height[number]`: Höhe dieses Artikels  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `jointArea[number]`: Gemeinsamer Bereich dieser Position und räumliche Objekte  . Model: [https://schema.org/Number](https://schema.org/Number)- `jointDirection[*]`: Gemeinsame Leitung dieser Position und der räumlichen Objekte  - `jointSurface[*]`: Gemeinsame Oberfläche dieses Artikels und räumliche Objekte  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `objectName[string]`: Name dieser Position als Objekt  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `refArea[array]`: Verweis auf den Bereich, der dieses Element enthält  - `refBuilding[array]`: Verweis auf das Gebäude, das diesen Gegenstand enthält  - `refMaterial[array]`: Verweis auf das Material, das diese Position enthält  - `refRoom[array]`: Verweis auf den Raum, der diesen Gegenstand enthält  - `refStair[array]`: Verweis auf die Treppe, die diesen Punkt enthält  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `shape[*]`: Form dieses Artikels  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `surfaceBase[*]`: Grundform dieses Artikels  - `thermalTransmission[number]`: Wärmeübertragung dieses Artikels  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Sie muss gleich der Spalte  - `volumetricSpecificHeat[number]`: Volumetrische spezifische Wärme dieses Artikels  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -802,50 +802,65 @@ Column:
       x-ngsi:    
         type: Property    
     refArea:    
+      description: Reference to the area containing this item    
       items:    
-        description: Reference to the area containing this item    
+        description: every item Contained in the reference Area    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refBuilding:    
+      description: Reference to the building containing this item    
       items:    
-        description: Reference to the building containing this item    
+        description: Reference to every element containing this building    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refMaterial:    
+      description: Reference to the material containing this item    
       items:    
-        description: Reference to the material containing this item    
+        description: Every reference to the materials containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refRoom:    
+      description: Reference to the room containing this item    
       items:    
-        description: Reference to the room containing this item    
+        description: Reference to every room containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refStair:    
+      description: Reference to the stair containing this item    
       items:    
-        description: Reference to the stair containing this item    
+        description: Reference to every stair containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
