@@ -23,7 +23,7 @@
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
-- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `dateObjectCreated[date-time]`: Das Datum und die Uhrzeit der Registrierung dieses Objekts.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: Das Aktualisierungsdatum und die Uhrzeit dieses Elements als Objekt.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: Eine Beschreibung dieses Artikels  - `flagDeleted[string]`: Kennzeichen, das gesetzt wird, wenn dieses Element als Objekt gelöscht wird.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `jointArea[number]`:  Gemeinsamer Bereich dieser Position und räumliche Objekte.  . Model: [https://schema.org/Number](https://schema.org/Number)- `jointDirection[*]`: Gemeinsame Leitung dieses Punktes und räumliche Objekte.  - `jointSurface[*]`: Gemeinsame Oberfläche dieses Artikels und räumliche Objekte.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `objectName[string]`: Name dieses Elements als Objekt.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `refArea[array]`:  Verweis auf den Bereich, der dieses Element enthält.  - `refBuilding[array]`: Verweis auf das Gebäude, in dem sich dieser Gegenstand befindet.  - `refMaterialLayer[array]`: Verweis auf die materialLayer, die dieses Element enthält.  - `refOpening[array]`: Verweis auf die Öffnung, die diese Position enthält.  - `refRoom[array]`: Verweis auf den Raum, der diesen Gegenstand enthält.  - `refStair[array]`: Verweis auf die Treppe, die dieses Element enthält.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `shape[*]`: Die Form dieses Artikels.  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `surfaceInner[*]`: Innere Form dieses Artikels.  - `surfaceOuter[*]`: Äußere Form dieses Artikels.  - `thermalTransmission[number]`: Wärmeübertragung dieses Artikels.  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: Die Dicke dieses Artikels.  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Sie muss gleich `Wall` sein.  - `volumetricSpecificHeat[number]`:  Volumetrische spezifische Wärme dieses Artikels.  . Model: [https://schema.org/Number](https://schema.org/Number)- `wallType[string]`: Wandtyp. Enum:'außen, innen, Keller'.  <!-- /30-PropertiesList -->  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `dateObjectCreated[date-time]`: Das Datum und die Uhrzeit der Registrierung dieses Artikels als Objekt.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: Das Aktualisierungsdatum und die Uhrzeit dieses Elements als Objekt.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: Eine Beschreibung dieses Artikels  - `flagDeleted[string]`: Kennzeichen, das gesetzt wird, wenn dieses Element als Objekt gelöscht wird.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `jointArea[number]`:  Gemeinsamer Bereich dieser Position und räumliche Objekte.  . Model: [https://schema.org/Number](https://schema.org/Number)- `jointDirection[*]`: Gemeinsame Leitung dieses Punktes und räumliche Objekte.  - `jointSurface[*]`: Gemeinsame Oberfläche dieses Artikels und räumliche Objekte.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `objectName[string]`: Name dieses Elements als Objekt.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `refArea[array]`:  Verweis auf den Bereich, der dieses Element enthält.  - `refBuilding[array]`: Verweis auf das Gebäude, in dem sich dieser Gegenstand befindet.  - `refMaterialLayer[array]`: Verweis auf die materialLayer, die dieses Element enthält.  - `refOpening[array]`: Verweis auf die Öffnung, die diese Position enthält.  - `refRoom[array]`: Verweis auf den Raum, der diesen Gegenstand enthält.  - `refStair[array]`: Verweis auf die Treppe, die dieses Element enthält.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `shape[*]`: Die Form dieses Artikels.  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `surfaceInner[*]`: Innere Form dieses Artikels.  - `surfaceOuter[*]`: Äußere Form dieses Artikels.  - `thermalTransmission[number]`: Wärmeübertragung dieses Artikels.  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: Die Dicke dieses Artikels.  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Sie muss gleich `Wall` sein.  - `volumetricSpecificHeat[number]`:  Volumetrische spezifische Wärme dieses Artikels.  . Model: [https://schema.org/Number](https://schema.org/Number)- `wallType[string]`: Wandtyp. Enum:'außen, innen, Keller'.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -175,15 +175,21 @@ Wall:
         - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
+              description: BBox of the  Point    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Point    
               items:    
                 type: number    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Point    
@@ -198,11 +204,15 @@ Wall:
         - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the LineString    
               items:    
                 items:    
                   type: number    
@@ -210,6 +220,8 @@ Wall:
                 type: array    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - LineString    
@@ -224,11 +236,15 @@ Wall:
         - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
+              description: BBox coordinates of the Polygon    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Polygon    
               items:    
                 items:    
                   items:    
@@ -238,6 +254,8 @@ Wall:
                 minItems: 4    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Polygon    
@@ -252,17 +270,23 @@ Wall:
         - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MulitPoint    
               items:    
                 items:    
                   type: number    
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPoint    
@@ -277,11 +301,15 @@ Wall:
         - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MultiLineString    
               items:    
                 items:    
                   items:    
@@ -291,6 +319,8 @@ Wall:
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiLineString    
@@ -310,6 +340,7 @@ Wall:
               minItems: 4    
               type: array    
             coordinates:    
+              description: Coordinates of the MultiPolygon    
               items:    
                 items:    
                   items:    
@@ -321,6 +352,8 @@ Wall:
                   type: array    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPolygon    
@@ -340,15 +373,21 @@ Wall:
         - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
+              description: BBox of the  Point    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Point    
               items:    
                 type: number    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Point    
@@ -363,11 +402,15 @@ Wall:
         - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the LineString    
               items:    
                 items:    
                   type: number    
@@ -375,6 +418,8 @@ Wall:
                 type: array    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - LineString    
@@ -389,11 +434,15 @@ Wall:
         - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
+              description: BBox coordinates of the Polygon    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Polygon    
               items:    
                 items:    
                   items:    
@@ -403,6 +452,8 @@ Wall:
                 minItems: 4    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Polygon    
@@ -417,17 +468,23 @@ Wall:
         - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MulitPoint    
               items:    
                 items:    
                   type: number    
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPoint    
@@ -442,11 +499,15 @@ Wall:
         - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MultiLineString    
               items:    
                 items:    
                   items:    
@@ -456,6 +517,8 @@ Wall:
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiLineString    
@@ -475,6 +538,7 @@ Wall:
               minItems: 4    
               type: array    
             coordinates:    
+              description: Coordinates of the MultiPolygon    
               items:    
                 items:    
                   items:    
@@ -486,6 +550,8 @@ Wall:
                   type: array    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPolygon    
@@ -505,15 +571,21 @@ Wall:
         - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
+              description: BBox of the  Point    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Point    
               items:    
                 type: number    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Point    
@@ -528,11 +600,15 @@ Wall:
         - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the LineString    
               items:    
                 items:    
                   type: number    
@@ -540,6 +616,8 @@ Wall:
                 type: array    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - LineString    
@@ -554,11 +632,15 @@ Wall:
         - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
+              description: BBox coordinates of the Polygon    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Polygon    
               items:    
                 items:    
                   items:    
@@ -568,6 +650,8 @@ Wall:
                 minItems: 4    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Polygon    
@@ -582,17 +666,23 @@ Wall:
         - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MulitPoint    
               items:    
                 items:    
                   type: number    
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPoint    
@@ -607,11 +697,15 @@ Wall:
         - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MultiLineString    
               items:    
                 items:    
                   items:    
@@ -621,6 +715,8 @@ Wall:
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiLineString    
@@ -640,6 +736,7 @@ Wall:
               minItems: 4    
               type: array    
             coordinates:    
+              description: Coordinates of the MultiPolygon    
               items:    
                 items:    
                   items:    
@@ -651,6 +748,8 @@ Wall:
                   type: array    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPolygon    
@@ -698,6 +797,13 @@ Wall:
         type: Property    
     refArea:    
       description: ' Reference to the area containing this item.'    
+      items:    
+        description: Every item Contained in the reference Area    
+        minItems: 1    
+        type: string    
+        uniqueItems: true    
+        x-ngsi:    
+          type: Relationship    
       minItems: 1    
       type: array    
       uniqueItems: true    
@@ -705,6 +811,13 @@ Wall:
         type: Relationship    
     refBuilding:    
       description: Reference to the building containing this item.    
+      items:    
+        description: Reference to every element containing this building    
+        minItems: 1    
+        type: string    
+        uniqueItems: true    
+        x-ngsi:    
+          type: Relationship    
       minItems: 1    
       type: array    
       uniqueItems: true    
@@ -712,6 +825,13 @@ Wall:
         type: Relationship    
     refMaterialLayer:    
       description: Reference to the materialLayer containing this item.    
+      items:    
+        description: Reference to every element containing this Material layer    
+        minItems: 1    
+        type: string    
+        uniqueItems: true    
+        x-ngsi:    
+          type: Relationship    
       minItems: 1    
       type: array    
       uniqueItems: true    
@@ -719,6 +839,13 @@ Wall:
         type: Relationship    
     refOpening:    
       description: Reference to the opening containing this item.    
+      items:    
+        description: Reference to every element containing this Opening    
+        minItems: 1    
+        type: string    
+        uniqueItems: true    
+        x-ngsi:    
+          type: Relationship    
       minItems: 1    
       type: array    
       uniqueItems: true    
@@ -726,6 +853,13 @@ Wall:
         type: Relationship    
     refRoom:    
       description: Reference to the room containing this item.    
+      items:    
+        description: Reference to every room containing this item    
+        minItems: 1    
+        type: string    
+        uniqueItems: true    
+        x-ngsi:    
+          type: Relationship    
       minItems: 1    
       type: array    
       uniqueItems: true    
@@ -733,6 +867,13 @@ Wall:
         type: Relationship    
     refStair:    
       description: Reference to the stair containing this item.    
+      items:    
+        description: Reference to every stair containing this item    
+        minItems: 1    
+        type: string    
+        uniqueItems: true    
+        x-ngsi:    
+          type: Relationship    
       minItems: 1    
       type: array    
       uniqueItems: true    
@@ -756,15 +897,21 @@ Wall:
         - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
+              description: BBox of the  Point    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Point    
               items:    
                 type: number    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Point    
@@ -779,11 +926,15 @@ Wall:
         - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the LineString    
               items:    
                 items:    
                   type: number    
@@ -791,6 +942,8 @@ Wall:
                 type: array    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - LineString    
@@ -805,11 +958,15 @@ Wall:
         - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
+              description: BBox coordinates of the Polygon    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Polygon    
               items:    
                 items:    
                   items:    
@@ -819,6 +976,8 @@ Wall:
                 minItems: 4    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Polygon    
@@ -833,17 +992,23 @@ Wall:
         - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MulitPoint    
               items:    
                 items:    
                   type: number    
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPoint    
@@ -858,11 +1023,15 @@ Wall:
         - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MultiLineString    
               items:    
                 items:    
                   items:    
@@ -872,6 +1041,8 @@ Wall:
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiLineString    
@@ -891,6 +1062,7 @@ Wall:
               minItems: 4    
               type: array    
             coordinates:    
+              description: Coordinates of the MultiPolygon    
               items:    
                 items:    
                   items:    
@@ -902,6 +1074,8 @@ Wall:
                   type: array    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPolygon    
@@ -926,15 +1100,21 @@ Wall:
         - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
+              description: BBox of the  Point    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Point    
               items:    
                 type: number    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Point    
@@ -949,11 +1129,15 @@ Wall:
         - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the LineString    
               items:    
                 items:    
                   type: number    
@@ -961,6 +1145,8 @@ Wall:
                 type: array    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - LineString    
@@ -975,11 +1161,15 @@ Wall:
         - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
+              description: BBox coordinates of the Polygon    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Polygon    
               items:    
                 items:    
                   items:    
@@ -989,6 +1179,8 @@ Wall:
                 minItems: 4    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Polygon    
@@ -1003,17 +1195,23 @@ Wall:
         - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MulitPoint    
               items:    
                 items:    
                   type: number    
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPoint    
@@ -1028,11 +1226,15 @@ Wall:
         - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MultiLineString    
               items:    
                 items:    
                   items:    
@@ -1042,6 +1244,8 @@ Wall:
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiLineString    
@@ -1061,6 +1265,7 @@ Wall:
               minItems: 4    
               type: array    
             coordinates:    
+              description: Coordinates of the MultiPolygon    
               items:    
                 items:    
                   items:    
@@ -1072,6 +1277,8 @@ Wall:
                   type: array    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPolygon    
@@ -1091,15 +1298,21 @@ Wall:
         - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
+              description: BBox of the  Point    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Point    
               items:    
                 type: number    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Point    
@@ -1114,11 +1327,15 @@ Wall:
         - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the LineString    
               items:    
                 items:    
                   type: number    
@@ -1126,6 +1343,8 @@ Wall:
                 type: array    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - LineString    
@@ -1140,11 +1359,15 @@ Wall:
         - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
+              description: BBox coordinates of the Polygon    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Polygon    
               items:    
                 items:    
                   items:    
@@ -1154,6 +1377,8 @@ Wall:
                 minItems: 4    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Polygon    
@@ -1168,17 +1393,23 @@ Wall:
         - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MulitPoint    
               items:    
                 items:    
                   type: number    
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPoint    
@@ -1193,11 +1424,15 @@ Wall:
         - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MultiLineString    
               items:    
                 items:    
                   items:    
@@ -1207,6 +1442,8 @@ Wall:
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiLineString    
@@ -1226,6 +1463,7 @@ Wall:
               minItems: 4    
               type: array    
             coordinates:    
+              description: Coordinates of the MultiPolygon    
               items:    
                 items:    
                   items:    
@@ -1237,6 +1475,8 @@ Wall:
                   type: array    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPolygon    
@@ -1292,7 +1532,7 @@ Wall:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2024 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2025 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.ZEB/blob/master/Wall/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.ZEB/Wall/schema.json    
   x-model-tags: Smart Building    
@@ -1306,7 +1546,7 @@ Wall:
 <!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### Wand NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für eine Mauer im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine Mauer im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -2672,7 +2912,7 @@ Wall:
 ```  
 </details>  
 #### Wand NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für eine Wand im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine Wand im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
