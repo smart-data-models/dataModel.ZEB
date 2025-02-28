@@ -1,0 +1,2 @@
+"@context__0_", "id_", "type_", "glassColor_", "glassName_", "glassSolarRadiationHeatAcquisitionRate_", "glassThermalTransmission_", "glassVisibleLightTransmittance_", "refWindow__0_"
+"https://smartdatamodels.org/context.jsonld", "urn:ngsi-ld:Glass:BOW0000000001", "Glass", "#5f5fe6", "MJS_glass", "0.54", "1.6", "0.9", "urn:ngsi-ld:Window:BOW0000000001"
