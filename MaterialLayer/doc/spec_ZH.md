@@ -23,7 +23,7 @@
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 标识公共街道上特定房产的编号    
-- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `dateObjectCreated[date-time]`: 此项目作为对象的注册日期和时间  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: 该项目作为对象的更新日期和时间  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: 项目描述  - `flagDeleted[string]`: 删除此项目作为对象时设置的标志  - `id[*]`: 实体的唯一标识符  - `layerNumber[number]`: 层数。对于墙体，编号是从内到外。板的编号从下到上  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: 项目的 Geojson 引用。可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `materialColor[string]`: 材料颜色（色标  - `materialName[string]`: 材料名称。  - `materialThermalConductivity[number]`: 材料的导热性  . Model: [https://schema.org/Number](https://schema.org/Number)- `materialVolumetricSpecificHeat[number]`: 材料的体积比热  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: 该项目的名称  - `objectName[string]`: 该项目作为对象的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一标识  - `refMaterial`:   - `refSlab`:   - `refWall`:   - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `shape[*]`: 该物品的形状  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `thermalTransmission[number]`: 本物品的热传导性  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: 该物品的厚度  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: 必须等于 MaterialLayer  - `volumetricSpecificHeat[number]`: 该物品的体积比热  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `dateObjectCreated[date-time]`: 此项目作为对象的注册日期和时间  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: 该项目作为对象的更新日期和时间  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: 项目描述  - `flagDeleted[string]`: 删除此项目作为对象时设置的标志  - `id[*]`: 实体的唯一标识符  - `layerNumber[number]`: 层数。对于墙体，编号是从内到外。板的编号从下到上  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `materialColor[string]`: 材料颜色（色标  - `materialName[string]`: 材料名称。  - `materialThermalConductivity[number]`: 材料的导热性  . Model: [https://schema.org/Number](https://schema.org/Number)- `materialVolumetricSpecificHeat[number]`: 材料的体积比热  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: 该项目的名称  - `objectName[string]`: 该项目作为对象的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一标识  - `refMaterial[array]`: 包含该项目材料的参考资料  - `refSlab[array]`: 包含此项目的板块参考  - `refWall[array]`: 包含此项目的墙壁参考  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `shape[*]`: 该物品的形状  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `thermalTransmission[number]`: 本物品的热传导性  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: 该物品的厚度  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: 必须等于 MaterialLayer  - `volumetricSpecificHeat[number]`: 该物品的体积比热  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -422,32 +422,41 @@ MaterialLayer:
       x-ngsi:    
         type: Property    
     refMaterial:    
+      description: Reference to the material containing this item    
       items:    
-        description: Reference to the material containing this item    
+        description: Every reference to the material containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refSlab:    
+      description: Reference to the slab containing this item    
       items:    
-        description: Reference to the slab containing this item    
+        description: Every reference to the slabs containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refWall:    
+      description: Reference to the wall containing this item    
       items:    
-        description: Reference to the wall containing this item    
+        description: Every reference to the walls containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
@@ -977,7 +986,7 @@ MaterialLayer:
 ```  
 </details>  
 #### 材料层 NGSI-LD 归一化示例  
-下面是一个以 JSON-LD 格式规范化的 MaterialLayer 示例。在不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
+下面是一个以 JSON-LD 格式规范化的 MaterialLayer 示例。当不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
