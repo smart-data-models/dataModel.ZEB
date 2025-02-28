@@ -1,0 +1,2 @@
+"@context__0_", "id_", "type_", "materialColor_", "materialName_", "materialThermalConductivity_", "materialVolumetricSpecificHeat_", "refColumn__0_", "refDoor__0_", "refMaterialLayer__0_", "refStair__0_", "refWindow__0_"
+"https://smartdatamodels.org/context.jsonld", "urn:ngsi-ld:Material:BOZ0000000001", "Material", "#f5f5f5", "MJS_LGS", "0.0963", "6600", "urn:ngsi-ld:Column:BCZ0000000001", "urn:ngsi-ld:Door:BOD0000000001", "urn:ngsi-ld:MaterialLayer:1", "urn:ngsi-ld:Stair:BTZ0000000001", "urn:ngsi-ld:Window:BOW0000000001"
