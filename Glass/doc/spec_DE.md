@@ -23,7 +23,7 @@
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
-- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `glassColor[string]`: Farbe (Farbcode) des Glases  - `glassName[string]`: Bezeichnung des Glasmaterials, z. B. gehärtetes Glas  - `glassSolarRadiationHeatAcquisitionRate[number]`: Solare Wärmeerfassungsrate von Glasmaterial  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `glassThermalTransmission[number]`: Wärmedurchlässigkeit von Glasmaterial  . Model: [https://schema.org/Number](https://schema.org/Number)- `glassVisibleLightTransmittance[number]`: Durchlässigkeit für sichtbares Licht von Glasmaterial  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `refWindow`:   - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type[string]`: Sie muss gleich Glas sein  <!-- /30-PropertiesList -->  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `glassColor[string]`: Farbe (Farbcode) des Glases  - `glassName[string]`: Bezeichnung des Glasmaterials, z. B. gehärtetes Glas  - `glassSolarRadiationHeatAcquisitionRate[number]`: Solare Wärmeerfassungsrate von Glasmaterial  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `glassThermalTransmission[number]`: Wärmedurchlässigkeit von Glasmaterial  . Model: [https://schema.org/Number](https://schema.org/Number)- `glassVisibleLightTransmittance[number]`: Durchlässigkeit für sichtbares Licht von Glasmaterial  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `refWindow[array]`: Verweis auf das Fenster, das dieses Element enthält  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type[string]`: Sie muss gleich Glas sein  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -397,14 +397,17 @@ Glass:
       x-ngsi:    
         type: Property    
     refWindow:    
+      description: Reference to the window containing this item    
       items:    
-        description: Reference to the window containing this item    
+        description: Every reference to the windows containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
