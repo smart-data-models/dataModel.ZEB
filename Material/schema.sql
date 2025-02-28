@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Material of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Material_type AS ENUM ('Material');
+CREATE TABLE Material (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, materialColor TEXT, materialName TEXT, materialThermalConductivity NUMERIC, materialVolumetricSpecificHeat NUMERIC, name TEXT, owner JSON, refColumn JSON, refDoor JSON, refMaterialLayer JSON, refStair JSON, refWindow JSON, seeAlso JSON, source TEXT, type Material_type);
