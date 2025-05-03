@@ -1,0 +1,2 @@
+"id_", "type_", "controlledProperty_", "dateIssued_", "dateRetrieved_", "forecastValue_", "outliter_", "refDevice__0_", "valueType_"
+"urn:ngsi-ld:DeviceForecast:FSA0000000001", "DeviceForecast", "temp", "2020-07-20T17:17:00.621Z", "2020-07-20T17:18:00.621Z", "21.96636298861935", "true", "urn:ngsi-ld:Device:FSA0000000001", "normal"
