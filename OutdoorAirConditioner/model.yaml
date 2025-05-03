@@ -1,0 +1,1061 @@
+OutdoorAirConditioner:
+  description: Information on OutdoorAirConditioner (maker, model, specification, etc.).
+  properties:
+    address:
+      description: The mailing address
+      properties:
+        addressCountry:
+          description: The country. For example, Spain
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressCountry
+            type: Property
+        addressLocality:
+          description: The locality in which the street address is, and which is in the region
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressLocality
+            type: Property
+        addressRegion:
+          description: The region in which the locality is, and which is in the country
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressRegion
+            type: Property
+        district:
+          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          type: string
+          x-ngsi:
+            type: Property
+        postOfficeBoxNumber:
+          description: The post office box number for PO box addresses. For example, 03578
+          type: string
+          x-ngsi:
+            model: https://schema.org/postOfficeBoxNumber
+            type: Property
+        postalCode:
+          description: The postal code. For example, 24004
+          type: string
+          x-ngsi:
+            model: https://schema.org/https://schema.org/postalCode
+            type: Property
+        streetAddress:
+          description: The street address
+          type: string
+          x-ngsi:
+            model: https://schema.org/streetAddress
+            type: Property
+        streetNr:
+          description: Number identifying a specific property on a public street
+          type: string
+          x-ngsi:
+            type: Property
+      type: object
+      x-ngsi:
+        model: https://schema.org/address
+        type: Property
+    alternateName:
+      description: An alternative name for this item
+      type: string
+      x-ngsi:
+        type: Property
+    areaServed:
+      description: The geographic area where a service or offered item is provided
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    capacityCooling:
+      description: Capacity cooling of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityCoolingMax:
+      description: Max capacity cooling of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityCoolingMin:
+      description: Min capacity cooling of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityDefumidificationCooling:
+      description: Defumidification capacity when cooling of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityDefumidificationMax:
+      description: Max defumidification capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityDefumidificationMin:
+      description: Min defumidification capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityHeatStorageCooling:
+      description: Heat storage cooling capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityHeatStorageCoolingMax:
+      description: Max heat storage cooling capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityHeatStorageHeating:
+      description: Heat storage heating capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityHeatStorageHeatingNormal:
+      description: Heat storage heating capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityHeating:
+      description: Capacity heating of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityHeatingMax:
+      description: Max apacity heating of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityHeatingMin:
+      description: Min apacity heating of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityLowHeating:
+      description: Low heating capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityLowHeatingCompressor:
+      description: Low heating compressor capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityNonHeatStorageCooling:
+      description: Non-heat storage cooling capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityNonHeatStorageCoolingMax:
+      description: Max non-heat storage cooling capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityNonHeatStorageHeatingMax:
+      description: Max non-heat storage heating capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    capacityRefrigeration:
+      description: Refrigeration capacity of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    classificationCode:
+      description: Classification code of this item.
+      type: string
+      x-ngsi:
+        type: Property
+    combinationFlag:
+      description: combination flag of this item.
+      type: string
+      x-ngsi:
+        type: Property
+    compressorOutput:
+      description: Cmpressor output of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    dataProvider:
+      description: A sequence of characters identifying the provider of the harmonised data entity
+      type: string
+      x-ngsi:
+        type: Property
+    dateCreated:
+      description: Entity creation timestamp. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    dateModified:
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    dateObjectCreated:
+      description: The registration date and time of this item as an object.
+      format: date-time
+      type: string
+      x-ngsi:
+        model: http://schema.org/DateTime
+        type: Property
+    dateObjectUpdated:
+      description: The update date and time of this item as an object.
+      format: date-time
+      type: string
+      x-ngsi:
+        model: http://schema.org/DateTime
+        type: Property
+    description:
+      description: A description of this item
+      type: string
+      x-ngsi:
+        type: Property
+    dryBulbTemperatureIndoorCooling:
+      description: Indoor dry bulb temperature when cooling.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    dryBulbTemperatureIndoorHeating:
+      description: Indoor dry bulb temperature when heating.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    dryBulbTemperatureIndoorLowHeating:
+      description: Indoor dry bulb temperature when low heating.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    dryBulbTemperatureOutdoorCooling:
+      description: Outdoor dry bulb temperature when cooling.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    dryBulbTemperatureOutdoorHeating:
+      description: Outdoor dry bulb temperature when heating.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    dryBulbTemperatureOutdoorLowHeating:
+      description: Outdoor dry bulb temperature when low heating.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    exteriorShape:
+      description: Exterior shape of this item.
+      oneOf:
+        - description: Geojson reference to the item. Point
+          properties:
+            bbox:
+              description: BBox of the  Point
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Point
+              items:
+                type: number
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Point
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. LineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the LineString
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON LineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. Polygon
+          properties:
+            bbox:
+              description: BBox coordinates of the Polygon
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Polygon
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Polygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiPoint
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MulitPoint
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPoint
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MultiLineString
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiLineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              description: Coordinates of the MultiPolygon
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPolygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+      x-ngsi:
+        type: GeoProperty
+    flagDeleted:
+      description: Flag set when this item is deleted as an object.
+      type: string
+      x-ngsi:
+        type: Property
+    heatSourceWaterTemperatureCooling:
+      description: Water temperature of heat source when cooling of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    heatSourceWaterTemperatureHeating:
+      description: Water temperature of heat source when heating of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    id:
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
+      description: Unique identifier of the entity
+      x-ngsi:
+        type: Relationship
+    idMaker:
+      description: Makerid of this item.
+      type: string
+      x-ngsi:
+        type: Property
+    idModel:
+      description: Model id or number of this item.
+      type: string
+      x-ngsi:
+        type: Property
+    location:
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+      oneOf:
+        - description: Geojson reference to the item. Point
+          properties:
+            bbox:
+              description: BBox of the  Point
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Point
+              items:
+                type: number
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Point
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. LineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the LineString
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON LineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. Polygon
+          properties:
+            bbox:
+              description: BBox coordinates of the Polygon
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Polygon
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Polygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiPoint
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MulitPoint
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPoint
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MultiLineString
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiLineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              description: Coordinates of the MultiPolygon
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPolygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+      x-ngsi:
+        type: GeoProperty
+    mnetAddress:
+      description: Mnet address of this item.
+      type: string
+      x-ngsi:
+        type: Property
+    motorOutput:
+      description: fan motor output of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    name:
+      description: The name of this item
+      type: string
+      x-ngsi:
+        type: Property
+    objectName:
+      description: Name of this item as an object.
+      type: string
+      x-ngsi:
+        type: Property
+    owner:
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
+      items:
+        anyOf:
+          - description: Identifier format of any NGSI entity
+            maxLength: 256
+            minLength: 1
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+            type: string
+            x-ngsi:
+              type: Property
+          - description: Identifier format of any NGSI entity
+            format: uri
+            type: string
+            x-ngsi:
+              type: Property
+        description: Unique identifier of the entity
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Property
+    powerConsumptionCooling:
+      description: Power consumption when cooling of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerConsumptionCoolingMax:
+      description: Max power consumption when cooling of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerConsumptionCoolingMin:
+      description: Min power consumption when cooling of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerConsumptionCoolingRegeneration:
+      description: Power consumption when regeneration cooling of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerConsumptionHeatStorage:
+      description: Power consumption when heat storaging of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerConsumptionHeating:
+      description: Power consumption when heating of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerConsumptionHeatingHeatStorage:
+      description: Power consumption when heat storage heating of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerConsumptionHeatingMax:
+      description: Max power consumption when heating of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerConsumptionHeatingMin:
+      description: Min power consumption when heating of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerConsumptionHeatingNonHeatStorage:
+      description: Power consumption when non-heat storage heating of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerConsumptionLowHeating:
+      description: Power consumption when low heating of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerConsumptionRegeneration:
+      description: Power consumption when Regenerating of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    powerFrequency:
+      description: Power frequency of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    price:
+      description: Price of this item.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    refElectricPowerEquipment:
+      description: Reference to the electric power equipment containing this item.
+      items:
+        description: Reference to the electric power equipment containing this item.
+        minItems: 1
+        type: string
+        uniqueItems: yes
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Relationship
+    refGatewayController:
+      description: Reference to the gateway controller containing this item.
+      items:
+        description: Reference to the gateway controller containing this item.
+        minItems: 1
+        type: string
+        uniqueItems: yes
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Relationship
+    refIndoorAirConditioner:
+      description: Reference to the indoor air conditioner containing this item.
+      items:
+        description: Reference to the indoor air conditioner containing this item.
+        minItems: 1
+        type: string
+        uniqueItems: yes
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Relationship
+    refOutdoorAirConditioner:
+      description: Reference to the outdoor air conditioner containing this item.
+      items:
+        description: Reference to the outdoor air conditioner containing this item.
+        minItems: 1
+        type: string
+        uniqueItems: yes
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Relationship
+    refOutdoorAirConditionerMeasurement:
+      description: Reference to the outdoor air conditioner measurement containing this item.
+      items:
+        description: Reference to the outdoor air conditioner measurement containing this item.
+        minItems: 1
+        type: string
+        uniqueItems: yes
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Relationship
+    refOutdoorAirConditionerMentenanceMeasurement:
+      description: Reference to the outdoor air conditioner mentenance measurement containing this item.
+      items:
+        description: Reference to the outdoor air conditioner mentenance measurement containing this item.
+        minItems: 1
+        type: string
+        uniqueItems: yes
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Relationship
+    refOutdoorAirTreatingUnit:
+      description: Reference to the outdoor air treating unit containing this item.
+      items:
+        description: Reference to the outdoor air treating unit containing this item.
+        minItems: 1
+        type: string
+        uniqueItems: yes
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Relationship
+    refSensor:
+      description: Reference to the sensor containing this item.
+      items:
+        description: Reference to the sensor containing this item.
+        minItems: 1
+        type: string
+        uniqueItems: yes
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Relationship
+    refSpace:
+      description: Reference to the space containing this item.
+      items:
+        description: Reference to the space containing this item.
+        minItems: 1
+        type: string
+        uniqueItems: yes
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Relationship
+    seeAlso:
+      description: list of uri pointing to additional resources about the item
+      oneOf:
+        - items:
+            format: uri
+            type: string
+          minItems: 1
+          type: array
+        - format: uri
+          type: string
+      x-ngsi:
+        type: Property
+    serialNumber:
+      description: ' Serial number of this item.'
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    source:
+      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      type: string
+      x-ngsi:
+        type: Property
+    specName:
+      description: Name of this item.
+      type: string
+      x-ngsi:
+        type: Property
+    type:
+      description: It must be equal to `OutdoorAirConditioner`.
+      enum:
+        - OutdoorAirConditioner
+      type: string
+      x-ngsi:
+        type: Property
+    wetBulbTemperatureIndoorCooling:
+      description: Indoor wet bulb temperature when cooling.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    wetBulbTemperatureOutdoorCooling:
+      description: Outdoor wet bulb temperature when cooling.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    wetBulbTemperatureOutdoorHeating:
+      description: Outdoor wet bulb temperature when heating.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    wetBulbTemperatureOutdoorLowHeating:
+      description: Outdoor wet bulb temperature when low heating.
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+  required:
+    - id
+    - type
+  type: object
+  x-derived-from: ''
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2025 Contributors to Smart Data Models Program
+  x-license-url: https://github.com/smart-data-models/dataModel.ZEB/blob/master/OutdoorAirConditioner/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.ZEB/OutdoorAirConditioner/schema.json
+  x-model-tags: Smart Building
+  x-version: 0.0.1
