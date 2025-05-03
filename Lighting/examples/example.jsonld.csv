@@ -1,0 +1,2 @@
+"@context__0_", "id_", "type_", "dateObjectCreated_", "dateObjectUpdated_", "flagDeleted_", "idMaker_", "idModel_", "objectName_", "refGatewayController__0_", "refLightingMeasurement__0_", "refSpace__0_"
+"https://smart-data-models.github.io/dataModel.ZEB/context.jsonld", "urn:ngsi-ld:Lighting:FLL0000000001", "Lighting", "2020-07-20T17:17:00.621Z", "2020-07-20T17:17:00.621Z", "false", "108420", "SP-2E", "20401:SP:804124", "urn:ngsi-ld:GatewayController:FGL0000000001", "urn:ngsi-ld:LightingMeasurement:FLL0000000001", "urn:ngsi-ld:Space:SAZO0000000001"
