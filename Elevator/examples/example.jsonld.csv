@@ -1,0 +1,2 @@
+"@context__0_", "id_", "type_", "carNumber_", "cwRate_", "dateObjectCreated_", "dateObjectUpdated_", "flagDeleted_", "idMaker_", "idModel_", "objectName_", "refGatewayController__0_", "refSensor__0_", "refSpace__0_"
+"https://smart-data-models.github.io/dataModel.ZEB/context.jsonld", "urn:ngsi-ld:Elevator:FVV0000000001", "Elevator", "1", "0.45", "2020-07-20T17:17:00.621Z", "2020-07-20T17:17:00.621Z", "false", "108420", "TOKUCHU1", "ELV No.1", "urn:ngsi-ld:GatewayController:FGV0000000001", "urn:ngsi-ld:Sensor:FSI0000000001", "urn:ngsi-ld:Space:SAZO0000000001"
