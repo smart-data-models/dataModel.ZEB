@@ -1,0 +1,2 @@
+"id_", "type_", "category_", "dateObjectCreated_", "dateObjectUpdated_", "flagDeleted_", "idMaker_", "objectName_", "refGatewayController__0_", "refSensor__0_", "refSpace__0_"
+"urn:ngsi-ld:Equipment:FNC0000000010", "Equipment", "elockauto", "2020-07-20T17:17:00.621Z", "2020-07-20T17:17:00.621Z", "false", "108420", "SUSTIE_1F_entrance", "urn:ngsi-ld:GatewayController:FGN0000000001", "urn:ngsi-ld:Sensor:FSI0000000001", "urn:ngsi-ld:Space:SAZO0000000001"
