@@ -1,0 +1,2 @@
+"id_", "type_", "areaType_", "controlledProperty_", "dateIssued_", "dateRetrieved_", "forecastIndexValue_", "outliter_", "refArea__0_"
+"urn:ngsi-ld:AreaEnvironmentForecast:SAZ0000000001", "AreaEnvironmentForecast", "ac", "heat", "2020-07-20T17:17:00.621Z", "2020-07-20T17:18:00.621Z", "0.24172974130198632", "true", "urn:ngsi-ld:Area:SAZ0000000001"
