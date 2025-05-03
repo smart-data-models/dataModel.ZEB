@@ -358,14 +358,17 @@ Glass:
       x-ngsi:
         type: Property
     refWindow:
+      description: Reference to the window containing this item
       items:
-        description: Reference to the window containing this item
+        description: Every reference to the windows containing this item
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:

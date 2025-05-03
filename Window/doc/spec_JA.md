@@ -23,7 +23,7 @@
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
-- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObjectCreated[date-time]`: このアイテムのオブジェクトとしての登録日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: オブジェクトとしてのこのアイテムの更新日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: この商品の説明  - `flagDeleted[string]`: このアイテムがオブジェクトとして削除されたときに設定されるフラグ  - `id[*]`: エンティティの一意識別子  - `jointArea[number]`: このアイテムと空間オブジェクトの共同エリア  . Model: [https://schema.org/Number](https://schema.org/Number)- `jointDirection[*]`: 本項目と空間オブジェクトの共同ディレクション  - `jointSurface[*]`: このアイテムと空間オブジェクトの接合面  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `objectName[string]`: オブジェクトとしてのこのアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `refArea`:   - `refBuilding`:   - `refGlass`:   - `refRoom`:   - `refStair`:   - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `shape[*]`: この商品の形状  - `solarRadiationHeatAcquisitionRate[number]`: 太陽熱取得率  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `surfaceGlass[*]`: グラスの形状  - `thermalTransmission[number]`: この商品の熱伝導率  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: ウィンドウ  - `volumetricSpecificHeat[number]`: この項目の体積比熱  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObjectCreated[date-time]`: このアイテムのオブジェクトとしての登録日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: オブジェクトとしてのこのアイテムの更新日時  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: この商品の説明  - `flagDeleted[string]`: このアイテムがオブジェクトとして削除されたときに設定されるフラグ  - `id[*]`: エンティティの一意識別子  - `jointArea[number]`: このアイテムと空間オブジェクトの共同エリア  . Model: [https://schema.org/Number](https://schema.org/Number)- `jointDirection[*]`: 本項目と空間オブジェクトの共同ディレクション  - `jointSurface[*]`: このアイテムと空間オブジェクトの接合面  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `objectName[string]`: オブジェクトとしてのこのアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `refArea[array]`: このアイテムを含むエリアに関する言及  - `refBuilding[array]`: このアイテムを含む建物に関する言及  - `refGlass[array]`: この商品が入っているグラスへの言及  - `refRoom[array]`: この項目が含まれている部屋に関する言及  - `refStair[array]`: この項目が含まれる階段への言及  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `shape[*]`: この商品の形状  - `solarRadiationHeatAcquisitionRate[number]`: 太陽熱取得率  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `surfaceGlass[*]`: グラスの形状  - `thermalTransmission[number]`: この商品の熱伝導率  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: ウィンドウ  - `volumetricSpecificHeat[number]`: この項目の体積比熱  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -796,50 +796,65 @@ Window:
       x-ngsi:    
         type: Property    
     refArea:    
+      description: Reference to the area containing this item    
       items:    
-        description: Reference to the area containing this item    
+        description: every item Contained in the reference Area    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refBuilding:    
+      description: Reference to the building containing this item    
       items:    
-        description: Reference to the building containing this item    
+        description: Reference to every element containing this building    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refGlass:    
+      description: Reference to the glass containing this item    
       items:    
-        description: Reference to the glass containing this item    
+        description: Reference to every glass containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refRoom:    
+      description: Reference to the room containing this item    
       items:    
-        description: Reference to the room containing this item    
+        description: Reference to every room containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refStair:    
+      description: Reference to the stair containing this item    
       items:    
-        description: Reference to the stair containing this item    
+        description: Reference to every stair containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
@@ -1063,7 +1078,7 @@ Window:
       x-ngsi:    
         type: Property    
     surfaceGlass:    
-      description: shape of the glass    
+      description: Shape of the glass    
       oneOf:    
         - description: Geojson reference to the item. Point    
           properties:    

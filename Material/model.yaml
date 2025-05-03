@@ -352,50 +352,69 @@ Material:
       x-ngsi:
         type: Property
     refColumn:
+      description: Reference to the column containing this item
       items:
-        description: Reference to the column containing this item
+        description: Every reference to the columns containing this item
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     refDoor:
+      description: Reference to the door containing this item
       items:
-        description: Reference to the door containing this item
+        description: Every reference to the doors containing this item
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     refMaterialLayer:
+      description: Reference to the materialLayer containing this item.
       items:
-        description: Reference to the materialLayer containing this item
+        description: Reference to every element containing this Material layer
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
+      minItems: 1
       type: array
+      uniqueItems: true
+      x-ngsi:
+        type: Relationship
     refStair:
+      description: Reference to the stair containing this item.
       items:
-        description: Reference to the stair containing this item
+        description: Reference to every stair containing this item
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
+      minItems: 1
       type: array
+      uniqueItems: true
+      x-ngsi:
+        type: Relationship
     refWindow:
+      description: Reference to the window containing this item
       items:
-        description: Reference to the window containing this item
+        description: Every reference to the windows containing this item
         minItems: 1
         type: string
         uniqueItems: true
         x-ngsi:
           type: Relationship
       type: array
+      x-ngsi:
+        type: Relationship
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:

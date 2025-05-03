@@ -23,7 +23,7 @@
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
-- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `dateObjectCreated[date-time]`: La fecha y hora de registro de este elemento como objeto  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: La fecha y hora de actualización de este elemento como objeto  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: Descripción de este artículo  - `flagDeleted[string]`: Indicador que se establece cuando este elemento se elimina como objeto  - `id[*]`: Identificador único de la entidad  - `layerNumber[number]`: Número de capa. Para los muros, la numeración es de dentro a fuera. Para los forjados, la numeración es de abajo hacia arriba.  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `materialColor[string]`: Color(código de color) del material  - `materialName[string]`: Nombre del material.  - `materialThermalConductivity[number]`: Conductividad térmica del material  . Model: [https://schema.org/Number](https://schema.org/Number)- `materialVolumetricSpecificHeat[number]`: Calor específico volumétrico del material  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo  - `objectName[string]`: Nombre de este elemento como objeto  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `refMaterial`:   - `refSlab`:   - `refWall`:   - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shape[*]`: Forma de este artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `thermalTransmission[number]`: Transmisión térmica de este artículo  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: Grosor de este artículo  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Debe ser igual a MaterialLayer  - `volumetricSpecificHeat[number]`: Calor específico volumétrico de este artículo  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `dateObjectCreated[date-time]`: La fecha y hora de registro de este elemento como objeto  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: La fecha y hora de actualización de este elemento como objeto  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: Descripción de este artículo  - `flagDeleted[string]`: Indicador que se establece cuando este elemento se elimina como objeto  - `id[*]`: Identificador único de la entidad  - `layerNumber[number]`: Número de capa. Para los muros, la numeración es de dentro a fuera. Para los forjados, la numeración es de abajo hacia arriba.  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `materialColor[string]`: Color(código de color) del material  - `materialName[string]`: Nombre del material.  - `materialThermalConductivity[number]`: Conductividad térmica del material  . Model: [https://schema.org/Number](https://schema.org/Number)- `materialVolumetricSpecificHeat[number]`: Calor específico volumétrico del material  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: El nombre de este artículo  - `objectName[string]`: Nombre de este elemento como objeto  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `refMaterial[array]`: Referencia al material que contiene este artículo  - `refSlab[array]`: Referencia a la losa que contiene este artículo  - `refWall[array]`: Referencia al muro que contiene este artículo  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `shape[*]`: Forma de este artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `thermalTransmission[number]`: Transmisión térmica de este artículo  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: Grosor de este artículo  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Debe ser igual a MaterialLayer  - `volumetricSpecificHeat[number]`: Calor específico volumétrico de este artículo  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -422,32 +422,41 @@ MaterialLayer:
       x-ngsi:    
         type: Property    
     refMaterial:    
+      description: Reference to the material containing this item    
       items:    
-        description: Reference to the material containing this item    
+        description: Every reference to the material containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refSlab:    
+      description: Reference to the slab containing this item    
       items:    
-        description: Reference to the slab containing this item    
+        description: Every reference to the slabs containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refWall:    
+      description: Reference to the wall containing this item    
       items:    
-        description: Reference to the wall containing this item    
+        description: Every reference to the walls containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    

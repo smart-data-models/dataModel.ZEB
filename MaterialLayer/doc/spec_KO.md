@@ -23,12 +23,12 @@
 	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
-- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateObjectCreated[date-time]`: 이 항목을 개체로 등록한 날짜 및 시간입니다.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: 객체로서 이 항목의 업데이트 날짜 및 시간입니다.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: 이 항목에 대한 설명  - `flagDeleted[string]`: 이 항목이 객체로 삭제될 때 설정되는 플래그  - `id[*]`: 엔티티의 고유 식별자  - `layerNumber[number]`: 레이어 수입니다. 벽의 경우 안쪽에서 바깥쪽으로 번호가 매겨집니다. 슬래브의 경우 아래에서 위로 번호가 매겨집니다.  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인스트링, 다각형, 멀티포인트, 멀티라인스트링 또는 멀티폴리곤일 수 있습니다.  - `materialColor[string]`: 소재의 색상(색상 코드)  - `materialName[string]`: 자료 이름.  - `materialThermalConductivity[number]`: 재료의 열 전도성  . Model: [https://schema.org/Number](https://schema.org/Number)- `materialVolumetricSpecificHeat[number]`: 재료의 체적 비열  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: 이 항목의 이름  - `objectName[string]`: 객체로서 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `refMaterial`:   - `refSlab`:   - `refWall`:   - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `shape[*]`: 이 항목의 모양  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `thermalTransmission[number]`: 이 항목의 열 전달  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: 이 항목의 두께  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: 머티리얼 레이어와 같아야 합니다.  - `volumetricSpecificHeat[number]`: 이 항목의 체적 비열  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateObjectCreated[date-time]`: 이 항목을 개체로 등록한 날짜 및 시간입니다.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateObjectUpdated[date-time]`: 객체로서 이 항목의 업데이트 날짜 및 시간입니다.  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `description[string]`: 이 항목에 대한 설명  - `flagDeleted[string]`: 이 항목이 객체로 삭제될 때 설정되는 플래그  - `id[*]`: 엔티티의 고유 식별자  - `layerNumber[number]`: 레이어 수입니다. 벽의 경우 안쪽에서 바깥쪽으로 번호가 매겨집니다. 슬래브의 경우 아래에서 위로 번호가 매겨집니다.  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인스트링, 다각형, 멀티포인트, 멀티라인스트링 또는 멀티폴리곤일 수 있습니다.  - `materialColor[string]`: 소재의 색상(색상 코드)  - `materialName[string]`: 자료 이름.  - `materialThermalConductivity[number]`: 재료의 열 전도성  . Model: [https://schema.org/Number](https://schema.org/Number)- `materialVolumetricSpecificHeat[number]`: 재료의 체적 비열  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: 이 항목의 이름  - `objectName[string]`: 객체로서 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `refMaterial[array]`: 이 항목이 포함된 자료 참조  - `refSlab[array]`: 이 항목이 포함된 슬래브에 대한 참조  - `refWall[array]`: 이 항목이 포함된 벽에 대한 참조  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `shape[*]`: 이 항목의 모양  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `thermalTransmission[number]`: 이 항목의 열 전달  . Model: [https://schema.org/Number](https://schema.org/Number)- `thickness[number]`: 이 항목의 두께  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: 머티리얼 레이어와 같아야 합니다.  - `volumetricSpecificHeat[number]`: 이 항목의 체적 비열  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
-사양의 시작 부분에 표시되는 메모  
+사양 시작 부분에 표시되는 메모  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## 속성에 대한 데이터 모델 설명  
@@ -422,32 +422,41 @@ MaterialLayer:
       x-ngsi:    
         type: Property    
     refMaterial:    
+      description: Reference to the material containing this item    
       items:    
-        description: Reference to the material containing this item    
+        description: Every reference to the material containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refSlab:    
+      description: Reference to the slab containing this item    
       items:    
-        description: Reference to the slab containing this item    
+        description: Every reference to the slabs containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     refWall:    
+      description: Reference to the wall containing this item    
       items:    
-        description: Reference to the wall containing this item    
+        description: Every reference to the walls containing this item    
         minItems: 1    
         type: string    
         uniqueItems: true    
         x-ngsi:    
           type: Relationship    
       type: array    
+      x-ngsi:    
+        type: Relationship    
     seeAlso:    
       description: list of uri pointing to additional resources about the item    
       oneOf:    
@@ -709,7 +718,7 @@ MaterialLayer:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## 페이로드 예시  
-#### MaterialLayer NGSI-v2 키 값 예제  
+#### MaterialLayer NGSI-v2 키 값 예시  
 다음은 키 값으로 JSON-LD 형식의 머티리얼 레이어의 예시입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
