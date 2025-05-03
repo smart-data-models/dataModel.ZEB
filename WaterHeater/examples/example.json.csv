@@ -1,0 +1,2 @@
+"id_", "type_", "dateObjectCreated_", "dateObjectUpdated_", "flagDeleted_", "objectName_", "refSpace__0_"
+"urn:ngsi-ld:WaterHeater:FHH0000000001", "WaterHeater", "2020-07-20T17:17:00.621Z", "2020-07-20T17:17:00.621Z", "false", "WaterHeater_PresentationRoom", "urn:ngsi-ld:Space:SAZ0000000001"
