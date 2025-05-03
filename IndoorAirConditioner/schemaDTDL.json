@@ -1,0 +1,501 @@
+{
+    "@id": "dtmi:com:ngsi-ld:IndoorAirConditioner;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data Models - IndoorAirConditioner schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.ZEB/master/IndoorAirConditioner/schema.json",
+    "description": "Information on IndoorAirConditioner (maker, model, specification, etc.).",
+    "displayName": "IndoorAirConditioner",
+    "contents": [
+        {
+            "name": "airSupplyQuantitiyCooling",
+            "writable": true,
+            "displayName": "airSupplyQuantitiyCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Air supply quantitiy when cooling of this item."
+        },
+        {
+            "name": "airSupplyQuantitiyHeating",
+            "writable": true,
+            "displayName": "airSupplyQuantitiyHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Air supply quantitiy when heating of this item."
+        },
+        {
+            "name": "airSupplyQuantitiyHigh",
+            "writable": true,
+            "displayName": "airSupplyQuantitiyHigh",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Air supply quantitiy when set amount of wind is high of this item."
+        },
+        {
+            "name": "airSupplyQuantitiyLow",
+            "writable": true,
+            "displayName": "airSupplyQuantitiyLow",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Air supply quantitiy when set amount of wind is low of this item."
+        },
+        {
+            "name": "airSupplyQuantitiyMiddle",
+            "writable": true,
+            "displayName": "airSupplyQuantitiyMiddle",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Air supply quantitiy when set amount of wind is middle of this item."
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "capacityCooling",
+            "writable": true,
+            "displayName": "capacityCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Capacity cooling of this item."
+        },
+        {
+            "name": "capacityHeating",
+            "writable": true,
+            "displayName": "capacityHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Capacity heating of this item."
+        },
+        {
+            "name": "classificationCode",
+            "writable": true,
+            "displayName": "classificationCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Classification code of this item."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateObjectCreated",
+            "writable": true,
+            "displayName": "dateObjectCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "The registration date and time of this item as an object."
+        },
+        {
+            "name": "dateObjectUpdated",
+            "writable": true,
+            "displayName": "dateObjectUpdated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "The update date and time of this item as an object."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "dryBulbTemperatureIndoorCooling",
+            "writable": true,
+            "displayName": "dryBulbTemperatureIndoorCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Indoor dry bulb temperature when cooling."
+        },
+        {
+            "name": "dryBulbTemperatureIndoorHeating",
+            "writable": true,
+            "displayName": "dryBulbTemperatureIndoorHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Indoor dry bulb temperature when heating."
+        },
+        {
+            "name": "dryBulbTemperatureOutdoorCooling",
+            "writable": true,
+            "displayName": "dryBulbTemperatureOutdoorCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Outdoor dry bulb temperature when cooling."
+        },
+        {
+            "name": "dryBulbTemperatureOutdoorHeating",
+            "writable": true,
+            "displayName": "dryBulbTemperatureOutdoorHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Outdoor dry bulb temperature when heating."
+        },
+        {
+            "name": "flagDeleted",
+            "writable": true,
+            "displayName": "flagDeleted",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Flag set when this item is deleted as an object."
+        },
+        {
+            "name": "groupNumber",
+            "writable": true,
+            "displayName": "groupNumber",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Group number of this item."
+        },
+        {
+            "name": "idMaker",
+            "writable": true,
+            "displayName": "idMaker",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Makerid of this item."
+        },
+        {
+            "name": "idModel",
+            "writable": true,
+            "displayName": "idModel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Model id or number of this item."
+        },
+        {
+            "name": "mnetAddress",
+            "writable": true,
+            "displayName": "mnetAddress",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Mnet address of this item."
+        },
+        {
+            "name": "motorOutput",
+            "writable": true,
+            "displayName": "motorOutput",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Fan motor output of this item."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "objectName",
+            "writable": true,
+            "displayName": "objectName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of this item as an object."
+        },
+        {
+            "name": "powerConsumptionCooling",
+            "writable": true,
+            "displayName": "powerConsumptionCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power consumption when cooling of this item."
+        },
+        {
+            "name": "powerConsumptionHeating",
+            "writable": true,
+            "displayName": "powerConsumptionHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power consumption when heating of this item."
+        },
+        {
+            "name": "powerFrequency",
+            "writable": true,
+            "displayName": "powerFrequency",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power frequency of this item."
+        },
+        {
+            "name": "price",
+            "writable": true,
+            "displayName": "price",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Price of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "serialNumber",
+            "writable": true,
+            "displayName": "serialNumber",
+            "@type": "Property",
+            "schema": "long",
+            "comment": " Serial number of this item."
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "specName",
+            "writable": true,
+            "displayName": "specName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of this item."
+        },
+        {
+            "name": "wetBulbTemperatureIndoorCooling",
+            "writable": true,
+            "displayName": "wetBulbTemperatureIndoorCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Indoor wet bulb temperature when cooling."
+        },
+        {
+            "name": "wetBulbTemperatureOutdoorHeating",
+            "writable": true,
+            "displayName": "wetBulbTemperatureOutdoorHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Outdoor wet bulb temperature when heating."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refAirConditionerTerminal",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the air conditioner terminal containing this item.",
+            "displayName": "refAirConditionerTerminal"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refElectricPowerEquipment",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the electric power equipment containing this item.",
+            "displayName": "refElectricPowerEquipment"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refGatewayController",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the gateway controller containing this item.",
+            "displayName": "refGatewayController"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refIndoorAirConditionerMeasurement",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the indoor air conditioner measurement containing this item.",
+            "displayName": "refIndoorAirConditionerMeasurement"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refIndoorAirConditionerMentenanceMeasurement",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the indoor air conditioner mentenance measurement containing this item.",
+            "displayName": "refIndoorAirConditionerMentenanceMeasurement"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refOutdoorAirConditioner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the outdoor air conditioner containing this item.",
+            "displayName": "refOutdoorAirConditioner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refSensor",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the sensor containing this item.",
+            "displayName": "refSensor"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refSpace",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the space containing this item.",
+            "displayName": "refSpace"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        }
+    ]
+}
