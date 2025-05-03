@@ -1,0 +1,2 @@
+"@context__0_", "id_", "type_", "dateObjectCreated_", "dateObjectUpdated_", "flagDeleted_", "objectName_", "refIndoorAirConditioner__0_", "refOutdoorAirConditioner__0_", "refStair__0_"
+"https://smart-data-models.github.io/dataModel.ZEB/context.jsonld", "urn:ngsi-ld:BuildingZEB:SBZ0000000001", "BuildingZEB", "2020-07-20T17:17:00.621Z", "2020-07-20T17:17:00.621Z", "false", "SUSTIE", "urn:ngsi-ld:IndoorAirConditioner:FAI0000000001", "urn:ngsi-ld:OutdoorAirConditioner:FAO0000000001", "urn:ngsi-ld:Stair:BTZ0000000001"
