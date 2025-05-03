@@ -1,0 +1,352 @@
+{
+    "@id": "dtmi:com:ngsi-ld:AreaEnvironmentForecast;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data Models - AreaEnvironmentForecast schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.ZEB/master/AreaEnvironmentForecast/schema.json",
+    "description": "Information on AreaEnvironmentForecast(Area type, accuracy, simulation process, etc.).",
+    "displayName": "AreaEnvironmentForecast",
+    "contents": [
+        {
+            "name": "accuracy",
+            "writable": true,
+            "displayName": "accuracy",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Accuracy of forecast of this item."
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateIssued",
+            "writable": true,
+            "displayName": "dateIssued",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time to run the simulation of this item."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateRetrieved",
+            "writable": true,
+            "displayName": "dateRetrieved",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time to get simulation results of this item."
+        },
+        {
+            "name": "dateWeatherStart",
+            "writable": true,
+            "displayName": "dateWeatherStart",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Start date and time of weather forecast data or weather log used for simulation of this item."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "forecastIndexValue",
+            "writable": true,
+            "displayName": "forecastIndexValue",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Forecast value of the index."
+        },
+        {
+            "name": "idWeather",
+            "writable": true,
+            "displayName": "idWeather",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "ID of the weather station used for the forecast."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "outliter",
+            "writable": true,
+            "displayName": "outliter",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Flag whether the simulation was successful or not"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "simFrom",
+            "writable": true,
+            "displayName": "simFrom",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Start date and time of the simulation."
+        },
+        {
+            "name": "simName",
+            "writable": true,
+            "displayName": "simName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the simulation process."
+        },
+        {
+            "name": "simProcess",
+            "writable": true,
+            "displayName": "simProcess",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Simulation process of this item."
+        },
+        {
+            "name": "simTo",
+            "writable": true,
+            "displayName": "simTo",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "End date and time of the simulation."
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refArea",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the area containing this item.",
+            "displayName": "refArea"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "areaType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "ac",
+                        "displayName": "ac",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "vent",
+                        "displayName": "vent",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "light",
+                        "displayName": "light",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "hw",
+                        "displayName": "hw",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "acs",
+                        "displayName": "acs",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "oa",
+                        "displayName": "oa",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "analyze",
+                        "displayName": "analyze",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "cell",
+                        "displayName": "cell",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "sensor",
+                        "displayName": "sensor",
+                        "enumValue": 9
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "controlledProperty",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "air",
+                        "displayName": "air",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "heat",
+                        "displayName": "heat",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "light",
+                        "displayName": "light",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "sound",
+                        "displayName": "sound",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "water",
+                        "displayName": "water",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "total",
+                        "displayName": "total",
+                        "enumValue": 6
+                    }
+                ]
+            }
+        }
+    ]
+}
