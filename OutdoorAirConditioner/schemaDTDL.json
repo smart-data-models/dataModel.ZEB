@@ -1,0 +1,743 @@
+{
+    "@id": "dtmi:com:ngsi-ld:OutdoorAirConditioner;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data Models - OutdoorAirConditioner schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.ZEB/master/OutdoorAirConditioner/schema.json",
+    "description": "Information on OutdoorAirConditioner (maker, model, specification, etc.).",
+    "displayName": "OutdoorAirConditioner",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "capacityCooling",
+            "writable": true,
+            "displayName": "capacityCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Capacity cooling of this item."
+        },
+        {
+            "name": "capacityCoolingMax",
+            "writable": true,
+            "displayName": "capacityCoolingMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max capacity cooling of this item."
+        },
+        {
+            "name": "capacityCoolingMin",
+            "writable": true,
+            "displayName": "capacityCoolingMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Min capacity cooling of this item."
+        },
+        {
+            "name": "capacityDefumidificationCooling",
+            "writable": true,
+            "displayName": "capacityDefumidificationCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Defumidification capacity when cooling of this item."
+        },
+        {
+            "name": "capacityDefumidificationMax",
+            "writable": true,
+            "displayName": "capacityDefumidificationMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max defumidification capacity of this item."
+        },
+        {
+            "name": "capacityDefumidificationMin",
+            "writable": true,
+            "displayName": "capacityDefumidificationMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Min defumidification capacity of this item."
+        },
+        {
+            "name": "capacityHeatStorageCooling",
+            "writable": true,
+            "displayName": "capacityHeatStorageCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Heat storage cooling capacity of this item."
+        },
+        {
+            "name": "capacityHeatStorageCoolingMax",
+            "writable": true,
+            "displayName": "capacityHeatStorageCoolingMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max heat storage cooling capacity of this item."
+        },
+        {
+            "name": "capacityHeatStorageHeating",
+            "writable": true,
+            "displayName": "capacityHeatStorageHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Heat storage heating capacity of this item."
+        },
+        {
+            "name": "capacityHeatStorageHeatingNormal",
+            "writable": true,
+            "displayName": "capacityHeatStorageHeatingNormal",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Heat storage heating capacity of this item."
+        },
+        {
+            "name": "capacityHeating",
+            "writable": true,
+            "displayName": "capacityHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Capacity heating of this item."
+        },
+        {
+            "name": "capacityHeatingMax",
+            "writable": true,
+            "displayName": "capacityHeatingMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max apacity heating of this item."
+        },
+        {
+            "name": "capacityHeatingMin",
+            "writable": true,
+            "displayName": "capacityHeatingMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Min apacity heating of this item."
+        },
+        {
+            "name": "capacityLowHeating",
+            "writable": true,
+            "displayName": "capacityLowHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low heating capacity of this item."
+        },
+        {
+            "name": "capacityLowHeatingCompressor",
+            "writable": true,
+            "displayName": "capacityLowHeatingCompressor",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Low heating compressor capacity of this item."
+        },
+        {
+            "name": "capacityNonHeatStorageCooling",
+            "writable": true,
+            "displayName": "capacityNonHeatStorageCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Non-heat storage cooling capacity of this item."
+        },
+        {
+            "name": "capacityNonHeatStorageCoolingMax",
+            "writable": true,
+            "displayName": "capacityNonHeatStorageCoolingMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max non-heat storage cooling capacity of this item."
+        },
+        {
+            "name": "capacityNonHeatStorageHeatingMax",
+            "writable": true,
+            "displayName": "capacityNonHeatStorageHeatingMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max non-heat storage heating capacity of this item."
+        },
+        {
+            "name": "capacityRefrigeration",
+            "writable": true,
+            "displayName": "capacityRefrigeration",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Refrigeration capacity of this item."
+        },
+        {
+            "name": "classificationCode",
+            "writable": true,
+            "displayName": "classificationCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Classification code of this item."
+        },
+        {
+            "name": "combinationFlag",
+            "writable": true,
+            "displayName": "combinationFlag",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "combination flag of this item."
+        },
+        {
+            "name": "compressorOutput",
+            "writable": true,
+            "displayName": "compressorOutput",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Cmpressor output of this item."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateObjectCreated",
+            "writable": true,
+            "displayName": "dateObjectCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "The registration date and time of this item as an object."
+        },
+        {
+            "name": "dateObjectUpdated",
+            "writable": true,
+            "displayName": "dateObjectUpdated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "The update date and time of this item as an object."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "dryBulbTemperatureIndoorCooling",
+            "writable": true,
+            "displayName": "dryBulbTemperatureIndoorCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Indoor dry bulb temperature when cooling."
+        },
+        {
+            "name": "dryBulbTemperatureIndoorHeating",
+            "writable": true,
+            "displayName": "dryBulbTemperatureIndoorHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Indoor dry bulb temperature when heating."
+        },
+        {
+            "name": "dryBulbTemperatureIndoorLowHeating",
+            "writable": true,
+            "displayName": "dryBulbTemperatureIndoorLowHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Indoor dry bulb temperature when low heating."
+        },
+        {
+            "name": "dryBulbTemperatureOutdoorCooling",
+            "writable": true,
+            "displayName": "dryBulbTemperatureOutdoorCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Outdoor dry bulb temperature when cooling."
+        },
+        {
+            "name": "dryBulbTemperatureOutdoorHeating",
+            "writable": true,
+            "displayName": "dryBulbTemperatureOutdoorHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Outdoor dry bulb temperature when heating."
+        },
+        {
+            "name": "dryBulbTemperatureOutdoorLowHeating",
+            "writable": true,
+            "displayName": "dryBulbTemperatureOutdoorLowHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Outdoor dry bulb temperature when low heating."
+        },
+        {
+            "name": "flagDeleted",
+            "writable": true,
+            "displayName": "flagDeleted",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Flag set when this item is deleted as an object."
+        },
+        {
+            "name": "heatSourceWaterTemperatureCooling",
+            "writable": true,
+            "displayName": "heatSourceWaterTemperatureCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water temperature of heat source when cooling of this item."
+        },
+        {
+            "name": "heatSourceWaterTemperatureHeating",
+            "writable": true,
+            "displayName": "heatSourceWaterTemperatureHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Water temperature of heat source when heating of this item."
+        },
+        {
+            "name": "idMaker",
+            "writable": true,
+            "displayName": "idMaker",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Makerid of this item."
+        },
+        {
+            "name": "idModel",
+            "writable": true,
+            "displayName": "idModel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Model id or number of this item."
+        },
+        {
+            "name": "mnetAddress",
+            "writable": true,
+            "displayName": "mnetAddress",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Mnet address of this item."
+        },
+        {
+            "name": "motorOutput",
+            "writable": true,
+            "displayName": "motorOutput",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "fan motor output of this item."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "objectName",
+            "writable": true,
+            "displayName": "objectName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of this item as an object."
+        },
+        {
+            "name": "powerConsumptionCooling",
+            "writable": true,
+            "displayName": "powerConsumptionCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power consumption when cooling of this item."
+        },
+        {
+            "name": "powerConsumptionCoolingMax",
+            "writable": true,
+            "displayName": "powerConsumptionCoolingMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max power consumption when cooling of this item."
+        },
+        {
+            "name": "powerConsumptionCoolingMin",
+            "writable": true,
+            "displayName": "powerConsumptionCoolingMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Min power consumption when cooling of this item."
+        },
+        {
+            "name": "powerConsumptionCoolingRegeneration",
+            "writable": true,
+            "displayName": "powerConsumptionCoolingRegeneration",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power consumption when regeneration cooling of this item."
+        },
+        {
+            "name": "powerConsumptionHeatStorage",
+            "writable": true,
+            "displayName": "powerConsumptionHeatStorage",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power consumption when heat storaging of this item."
+        },
+        {
+            "name": "powerConsumptionHeating",
+            "writable": true,
+            "displayName": "powerConsumptionHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power consumption when heating of this item."
+        },
+        {
+            "name": "powerConsumptionHeatingHeatStorage",
+            "writable": true,
+            "displayName": "powerConsumptionHeatingHeatStorage",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power consumption when heat storage heating of this item."
+        },
+        {
+            "name": "powerConsumptionHeatingMax",
+            "writable": true,
+            "displayName": "powerConsumptionHeatingMax",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max power consumption when heating of this item."
+        },
+        {
+            "name": "powerConsumptionHeatingMin",
+            "writable": true,
+            "displayName": "powerConsumptionHeatingMin",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Min power consumption when heating of this item."
+        },
+        {
+            "name": "powerConsumptionHeatingNonHeatStorage",
+            "writable": true,
+            "displayName": "powerConsumptionHeatingNonHeatStorage",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power consumption when non-heat storage heating of this item."
+        },
+        {
+            "name": "powerConsumptionLowHeating",
+            "writable": true,
+            "displayName": "powerConsumptionLowHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power consumption when low heating of this item."
+        },
+        {
+            "name": "powerConsumptionRegeneration",
+            "writable": true,
+            "displayName": "powerConsumptionRegeneration",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power consumption when Regenerating of this item."
+        },
+        {
+            "name": "powerFrequency",
+            "writable": true,
+            "displayName": "powerFrequency",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power frequency of this item."
+        },
+        {
+            "name": "price",
+            "writable": true,
+            "displayName": "price",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Price of this item."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "serialNumber",
+            "writable": true,
+            "displayName": "serialNumber",
+            "@type": "Property",
+            "schema": "long",
+            "comment": " Serial number of this item."
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "specName",
+            "writable": true,
+            "displayName": "specName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of this item."
+        },
+        {
+            "name": "wetBulbTemperatureIndoorCooling",
+            "writable": true,
+            "displayName": "wetBulbTemperatureIndoorCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Indoor wet bulb temperature when cooling."
+        },
+        {
+            "name": "wetBulbTemperatureOutdoorCooling",
+            "writable": true,
+            "displayName": "wetBulbTemperatureOutdoorCooling",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Outdoor wet bulb temperature when cooling."
+        },
+        {
+            "name": "wetBulbTemperatureOutdoorHeating",
+            "writable": true,
+            "displayName": "wetBulbTemperatureOutdoorHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Outdoor wet bulb temperature when heating."
+        },
+        {
+            "name": "wetBulbTemperatureOutdoorLowHeating",
+            "writable": true,
+            "displayName": "wetBulbTemperatureOutdoorLowHeating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Outdoor wet bulb temperature when low heating."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refElectricPowerEquipment",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the electric power equipment containing this item.",
+            "displayName": "refElectricPowerEquipment"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refGatewayController",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the gateway controller containing this item.",
+            "displayName": "refGatewayController"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refIndoorAirConditioner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the indoor air conditioner containing this item.",
+            "displayName": "refIndoorAirConditioner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refOutdoorAirConditioner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the outdoor air conditioner containing this item.",
+            "displayName": "refOutdoorAirConditioner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refOutdoorAirConditionerMeasurement",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the outdoor air conditioner measurement containing this item.",
+            "displayName": "refOutdoorAirConditionerMeasurement"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refOutdoorAirConditionerMentenanceMeasurement",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the outdoor air conditioner mentenance measurement containing this item.",
+            "displayName": "refOutdoorAirConditionerMentenanceMeasurement"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refOutdoorAirTreatingUnit",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the outdoor air treating unit containing this item.",
+            "displayName": "refOutdoorAirTreatingUnit"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refSensor",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the sensor containing this item.",
+            "displayName": "refSensor"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refSpace",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the space containing this item.",
+            "displayName": "refSpace"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "exteriorShape_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        }
+    ]
+}
