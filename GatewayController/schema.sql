@@ -1,5 +1,5 @@
 /* (Beta) Export of data model GatewayController of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE gatewayControllerType_type AS ENUM ('iot', 'ac', 'acs', 'bas', 'light', 'elevator', 'ems', 'sensor');
+CREATE TYPE GatewayController_gatewayControllerType_type AS ENUM ('iot', 'ac', 'acs', 'bas', 'light', 'elevator', 'ems', 'sensor');
 CREATE TYPE GatewayController_type AS ENUM ('GatewayController');
 CREATE TABLE GatewayController (
   "address" JSON,
@@ -13,7 +13,7 @@ CREATE TABLE GatewayController (
   "description" TEXT,
   "exteriorShape" JSON,
   "flagDeleted" TEXT,
-  "gatewayControllerType" gatewayControllerType_type,
+  "gatewayControllerType" GatewayController_gatewayControllerType_type,
   "id" TEXT PRIMARY KEY,
   "idMaker" TEXT,
   "idModel" TEXT,
