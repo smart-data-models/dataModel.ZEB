@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Slab of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE slabType_type AS ENUM ('ceiling', 'floor', 'roof', 'base_floor', 'stair_floor');
+CREATE TYPE Slab_slabType_type AS ENUM ('ceiling', 'floor', 'roof', 'base_floor', 'stair_floor');
 CREATE TYPE Slab_type AS ENUM ('Slab');
 CREATE TABLE Slab (
   "address" JSON,
@@ -27,7 +27,7 @@ CREATE TABLE Slab (
   "refStair" JSON,
   "seeAlso" JSON,
   "shape" JSON,
-  "slabType" slabType_type,
+  "slabType" Slab_slabType_type,
   "source" TEXT,
   "surfaceBase" JSON,
   "surfaceTop" JSON,
