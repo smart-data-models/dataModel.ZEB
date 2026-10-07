@@ -1,13 +1,13 @@
 /* (Beta) Export of data model Room of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE areaType_type AS ENUM ('ac', 'vent', 'light', 'hw', 'elv', 'acs', 'oa', 'analyze', 'cell', 'sensor');
-CREATE TYPE numStoreyLevel_type AS ENUM ('B1F', '1F', 'M2F', '2F', 'M3F', '3F', '4F', 'RF');
-CREATE TYPE roomType_type AS ENUM ('room', 'shaft', 'above_ceiling', 'under_floor');
+CREATE TYPE Room_areaType_type AS ENUM ('ac', 'vent', 'light', 'hw', 'elv', 'acs', 'oa', 'analyze', 'cell', 'sensor');
+CREATE TYPE Room_numStoreyLevel_type AS ENUM ('B1F', '1F', 'M2F', '2F', 'M3F', '3F', '4F', 'RF');
+CREATE TYPE Room_roomType_type AS ENUM ('room', 'shaft', 'above_ceiling', 'under_floor');
 CREATE TYPE Room_type AS ENUM ('Room');
 CREATE TABLE Room (
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
-  "areaType" areaType_type,
+  "areaType" Room_areaType_type,
   "baseSurface" JSON,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
@@ -23,7 +23,7 @@ CREATE TABLE Room (
   "jointSurface" JSON,
   "location" JSON,
   "name" TEXT,
-  "numStoreyLevel" numStoreyLevel_type,
+  "numStoreyLevel" Room_numStoreyLevel_type,
   "objectName" TEXT,
   "owner" JSON,
   "refAirConditionerTerminal" JSON,
@@ -47,7 +47,7 @@ CREATE TABLE Room (
   "refWall" JSON,
   "refWaterHeater" JSON,
   "refWindow" JSON,
-  "roomType" roomType_type,
+  "roomType" Room_roomType_type,
   "seeAlso" JSON,
   "shape" JSON,
   "source" TEXT,
