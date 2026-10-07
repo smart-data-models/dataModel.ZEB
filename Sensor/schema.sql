@@ -1,12 +1,12 @@
 /* (Beta) Export of data model Sensor of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE controlledProperty_type AS ENUM ('powermeter', 'temp', 'humidity', 'co2', 'radiation', 'windspeed', 'heatflow', 'solar', 'condensation', 'weight', 'pmv', 'weather', 'beacon', 'zeacon', 'illuminance', 'brilliance', 'occupancy', 'mic', 'co', 'pollen', 'formaldehyde', 'tvoc', 'radon', 'ozon', 'pm25', 'pm10', 'pressure');
+CREATE TYPE Sensor_controlledProperty_type AS ENUM ('powermeter', 'temp', 'humidity', 'co2', 'radiation', 'windspeed', 'heatflow', 'solar', 'condensation', 'weight', 'pmv', 'weather', 'beacon', 'zeacon', 'illuminance', 'brilliance', 'occupancy', 'mic', 'co', 'pollen', 'formaldehyde', 'tvoc', 'radon', 'ozon', 'pm25', 'pm10', 'pressure');
 CREATE TYPE Sensor_type AS ENUM ('Sensor');
-CREATE TYPE valueType_type AS ENUM ('eqInstantIn', 'eqInstantOut', 'eqCountIn', 'eqCountOut', 'eqDiffIn', 'eqDiffOut', 'oaInstantIn', 'oaInstantOut', 'oaCountIn', 'oaCountOut', 'oaDiffIn', 'oaDiffOut', 'normal', 'grobe');
+CREATE TYPE Sensor_valueType_type AS ENUM ('eqInstantIn', 'eqInstantOut', 'eqCountIn', 'eqCountOut', 'eqDiffIn', 'eqDiffOut', 'oaInstantIn', 'oaInstantOut', 'oaCountIn', 'oaCountOut', 'oaDiffIn', 'oaDiffOut', 'normal', 'grobe');
 CREATE TABLE Sensor (
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
-  "controlledProperty" controlledProperty_type,
+  "controlledProperty" Sensor_controlledProperty_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
@@ -66,5 +66,5 @@ CREATE TABLE Sensor (
   "source" TEXT,
   "type" Sensor_type,
   "unit" TEXT,
-  "valueType" valueType_type
+  "valueType" Sensor_valueType_type
 );
