@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Stair of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE stairType_type AS ENUM ('strait_run', 'other');
+CREATE TYPE Stair_stairType_type AS ENUM ('strait_run', 'other');
 CREATE TYPE Stair_type AS ENUM ('Stair');
 CREATE TABLE Stair (
   "address" JSON,
@@ -31,7 +31,7 @@ CREATE TABLE Stair (
   "seeAlso" JSON,
   "shape" JSON,
   "source" TEXT,
-  "stairType" stairType_type,
+  "stairType" Stair_stairType_type,
   "surfaceBase" JSON,
   "thermalTransmission" NUMERIC,
   "type" Stair_type,
