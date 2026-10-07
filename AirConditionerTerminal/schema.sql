@@ -1,5 +1,5 @@
 /* (Beta) Export of data model AirConditionerTerminal of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE terminalType_type AS ENUM ('sa', 'ra', 'sock');
+CREATE TYPE AirConditionerTerminal_terminalType_type AS ENUM ('sa', 'ra', 'sock');
 CREATE TYPE AirConditionerTerminal_type AS ENUM ('AirConditionerTerminal');
 CREATE TABLE AirConditionerTerminal (
   "address" JSON,
@@ -32,6 +32,6 @@ CREATE TABLE AirConditionerTerminal (
   "serialNumber" NUMERIC,
   "source" TEXT,
   "terminalShape" JSON,
-  "terminalType" terminalType_type,
+  "terminalType" AirConditionerTerminal_terminalType_type,
   "type" AirConditionerTerminal_type
 );
