@@ -1,11 +1,11 @@
 /* (Beta) Export of data model Equipment of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE category_type AS ENUM ('crin', 'crout', 'hfain', 'hfaout', 'elockunlock', 'elocklock', 'elockstrike', 'elockmotor', 'elockauto', 'elockgate', 'blind');
+CREATE TYPE Equipment_category_type AS ENUM ('crin', 'crout', 'hfain', 'hfaout', 'elockunlock', 'elocklock', 'elockstrike', 'elockmotor', 'elockauto', 'elockgate', 'blind');
 CREATE TYPE Equipment_type AS ENUM ('Equipment');
 CREATE TABLE Equipment (
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
-  "category" category_type,
+  "category" Equipment_category_type,
   "compartmentNumber" NUMERIC,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
