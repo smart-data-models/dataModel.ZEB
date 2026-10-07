@@ -1,6 +1,6 @@
 /* (Beta) Export of data model Storey of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE numStoreyLevel_type AS ENUM ('B1F', 'GL', '1F', 'M2F', '2F', 'M3F', '3F', '4F', 'RF');
-CREATE TYPE roomType_type AS ENUM ('room', 'shaft', 'above_ceiling', 'under_floor');
+CREATE TYPE Storey_numStoreyLevel_type AS ENUM ('B1F', 'GL', '1F', 'M2F', '2F', 'M3F', '3F', '4F', 'RF');
+CREATE TYPE Storey_roomType_type AS ENUM ('room', 'shaft', 'above_ceiling', 'under_floor');
 CREATE TYPE Storey_type AS ENUM ('Storey');
 CREATE TABLE Storey (
   "address" JSON,
@@ -21,7 +21,7 @@ CREATE TABLE Storey (
   "jointSurface" JSON,
   "location" JSON,
   "name" TEXT,
-  "numStoreyLevel" numStoreyLevel_type,
+  "numStoreyLevel" Storey_numStoreyLevel_type,
   "objectName" TEXT,
   "owner" JSON,
   "refAirConditionerTerminal" JSON,
@@ -44,7 +44,7 @@ CREATE TABLE Storey (
   "refWall" JSON,
   "refWaterHeater" JSON,
   "refWindow" JSON,
-  "roomType" roomType_type,
+  "roomType" Storey_roomType_type,
   "seeAlso" JSON,
   "shape" JSON,
   "source" TEXT,
