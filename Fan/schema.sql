@@ -1,6 +1,6 @@
 /* (Beta) Export of data model Fan of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Fan_type AS ENUM ('Fan');
-CREATE TYPE ventType_type AS ENUM ('sa', 'ea');
+CREATE TYPE Fan_ventType_type AS ENUM ('sa', 'ea');
 CREATE TABLE Fan (
   "address" JSON,
   "airSupplyQuantitiy" NUMERIC,
@@ -43,5 +43,5 @@ CREATE TABLE Fan (
   "specName" TEXT,
   "type" Fan_type,
   "vaneSize" NUMERIC,
-  "ventType" ventType_type
+  "ventType" Fan_ventType_type
 );
