@@ -1,14 +1,14 @@
 /* (Beta) Export of data model AreaEnvironmentForecast of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE areaType_type AS ENUM ('ac', 'vent', 'light', 'hw', 'acs', 'oa', 'analyze', 'cell', 'sensor');
-CREATE TYPE controlledProperty_type AS ENUM ('air', 'heat', 'light', 'sound', 'water', 'total');
+CREATE TYPE AreaEnvironmentForecast_areaType_type AS ENUM ('ac', 'vent', 'light', 'hw', 'acs', 'oa', 'analyze', 'cell', 'sensor');
+CREATE TYPE AreaEnvironmentForecast_controlledProperty_type AS ENUM ('air', 'heat', 'light', 'sound', 'water', 'total');
 CREATE TYPE AreaEnvironmentForecast_type AS ENUM ('AreaEnvironmentForecast');
 CREATE TABLE AreaEnvironmentForecast (
   "accuracy" NUMERIC,
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
-  "areaType" areaType_type,
-  "controlledProperty" controlledProperty_type,
+  "areaType" AreaEnvironmentForecast_areaType_type,
+  "controlledProperty" AreaEnvironmentForecast_controlledProperty_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateIssued" TIMESTAMP,
