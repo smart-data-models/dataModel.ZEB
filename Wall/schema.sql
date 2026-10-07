@@ -1,6 +1,6 @@
 /* (Beta) Export of data model Wall of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Wall_type AS ENUM ('Wall');
-CREATE TYPE wallType_type AS ENUM ('outer', 'inner', 'basement');
+CREATE TYPE Wall_wallType_type AS ENUM ('outer', 'inner', 'basement');
 CREATE TABLE Wall (
   "address" JSON,
   "alternateName" TEXT,
@@ -35,5 +35,5 @@ CREATE TABLE Wall (
   "thickness" NUMERIC,
   "type" Wall_type,
   "volumetricSpecificHeat" NUMERIC,
-  "wallType" wallType_type
+  "wallType" Wall_wallType_type
 );
