@@ -1,12 +1,12 @@
 /* (Beta) Export of data model Area of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE areaType_type AS ENUM ('ac', 'vent', 'light', 'hw', 'elv', 'acs', 'oa', 'analyze', 'cell', 'sensor');
-CREATE TYPE roomType_type AS ENUM ('room', 'shaft', 'above_ceiling', 'under_floor');
+CREATE TYPE Area_areaType_type AS ENUM ('ac', 'vent', 'light', 'hw', 'elv', 'acs', 'oa', 'analyze', 'cell', 'sensor');
+CREATE TYPE Area_roomType_type AS ENUM ('room', 'shaft', 'above_ceiling', 'under_floor');
 CREATE TYPE Area_type AS ENUM ('Area');
 CREATE TABLE Area (
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
-  "areaType" areaType_type,
+  "areaType" Area_areaType_type,
   "baseSurface" JSON,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
@@ -46,7 +46,7 @@ CREATE TABLE Area (
   "refWall" JSON,
   "refWaterHeater" JSON,
   "refWindow" JSON,
-  "roomType" roomType_type,
+  "roomType" Area_roomType_type,
   "seeAlso" JSON,
   "shape" JSON,
   "source" TEXT,
