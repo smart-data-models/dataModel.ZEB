@@ -1,11 +1,11 @@
 /* (Beta) Export of data model Beacon of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE controlledProperty_type AS ENUM ('ble', 'ibeacon');
+CREATE TYPE Beacon_controlledProperty_type AS ENUM ('ble', 'ibeacon');
 CREATE TYPE Beacon_type AS ENUM ('Beacon');
 CREATE TABLE Beacon (
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
-  "controlledProperty" controlledProperty_type,
+  "controlledProperty" Beacon_controlledProperty_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
