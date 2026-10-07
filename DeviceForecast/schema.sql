@@ -1,13 +1,13 @@
 /* (Beta) Export of data model DeviceForecast of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE controlledProperty_type AS ENUM ('powermeter', 'temp', 'humidity', 'co2', 'radiation', 'windspeed', 'heatflow', 'solar', 'condensation', 'weight', 'illuminance', 'brilliance', 'occupancy', 'mic', 'co', 'pollen', 'formaldehyde', 'tvoc', 'radon', 'ozon', 'pm25', 'pm10', 'pressure');
+CREATE TYPE DeviceForecast_controlledProperty_type AS ENUM ('powermeter', 'temp', 'humidity', 'co2', 'radiation', 'windspeed', 'heatflow', 'solar', 'condensation', 'weight', 'illuminance', 'brilliance', 'occupancy', 'mic', 'co', 'pollen', 'formaldehyde', 'tvoc', 'radon', 'ozon', 'pm25', 'pm10', 'pressure');
 CREATE TYPE DeviceForecast_type AS ENUM ('DeviceForecast');
-CREATE TYPE valueType_type AS ENUM ('eqInstantIn', 'eqInstantOut', 'eqCountIn', 'eqCountOut', 'eqDiffIn', 'eqDiffOut', 'oaInstantIn', 'oaInstantOut', 'oaCountIn', 'oaCountOut', 'oaDiffIn', 'oaDiffOut', 'normal', 'grobe');
+CREATE TYPE DeviceForecast_valueType_type AS ENUM ('eqInstantIn', 'eqInstantOut', 'eqCountIn', 'eqCountOut', 'eqDiffIn', 'eqDiffOut', 'oaInstantIn', 'oaInstantOut', 'oaCountIn', 'oaCountOut', 'oaDiffIn', 'oaDiffOut', 'normal', 'grobe');
 CREATE TABLE DeviceForecast (
   "accuracy" NUMERIC,
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
-  "controlledProperty" controlledProperty_type,
+  "controlledProperty" DeviceForecast_controlledProperty_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateIssued" TIMESTAMP,
@@ -31,5 +31,5 @@ CREATE TABLE DeviceForecast (
   "simTo" TIMESTAMP,
   "source" TEXT,
   "type" DeviceForecast_type,
-  "valueType" valueType_type
+  "valueType" DeviceForecast_valueType_type
 );
