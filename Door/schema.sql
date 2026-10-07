@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Door of the subject dataModel.ZEB for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE doorType_type AS ENUM ('single', 'double', 'auto_single', 'auto_double', 'gate');
+CREATE TYPE Door_doorType_type AS ENUM ('single', 'double', 'auto_single', 'auto_double', 'gate');
 CREATE TYPE Door_type AS ENUM ('Door');
 CREATE TABLE Door (
   "address" JSON,
@@ -11,7 +11,7 @@ CREATE TABLE Door (
   "dateObjectCreated" TIMESTAMP,
   "dateObjectUpdated" TIMESTAMP,
   "description" TEXT,
-  "doorType" doorType_type,
+  "doorType" Door_doorType_type,
   "flagDeleted" TEXT,
   "id" TEXT PRIMARY KEY,
   "jointArea" NUMERIC,
